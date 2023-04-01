@@ -1,6 +1,6 @@
 {
-  "name": "Cleaning Cork",
-  "email": "info@cleaningcork.ie",
+  "name": "Cleanway",
+  "email": "info@cleanway.ie",
   "phone": "555-779-4407",
   "phoneFormatted": "(555) 779-4407",
   "address": {
@@ -11,5 +11,5 @@
     "postcode": "",
     "mapLink": ""
   },
-  "domain": "www.website.com"
+  "domain": "www.cleanway.ie"
 }
