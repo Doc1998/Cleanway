@@ -1063,13 +1063,16 @@
   /* Dark Mode */
   @media only screen and (min-width: 0rem) {
     body.dark-mode #steps-889 .cs-topper {
-      color: var(--primaryLight);
+      color: #fff;
     }
     body.dark-mode #steps-889 .cs-title,
     body.dark-mode #steps-889 .cs-text,
     body.dark-mode #steps-889 .cs-h3,
     body.dark-mode #steps-889 .cs-item-p {
       color: var(--bodyTextColorWhite);
+    }
+    body.dark-mode #sbsr-684 .cs-topper{
+      color:#fff;
     }
     body.dark-mode #steps-889 .cs-text,
     body.dark-mode #steps-889 .cs-item-p {

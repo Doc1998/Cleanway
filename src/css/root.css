@@ -165,9 +165,10 @@
   body.dark-mode #dark-mode-toggle-760 .cs-moon {
     transform: translate(-50%, -150%);
     opacity: 0;
+    fill: var(--primary);
   }
   #cs-navigation-760.cs-active .cs-moon {
-    fill: #fff;
+    fill: var(--primary);
   }
   #dark-mode-toggle-760 {
     display: block;
@@ -195,6 +196,7 @@
   #dark-mode-toggle-760 .cs-moon {
     z-index: 2;
     transition: transform .3s, opacity .3s;
+    fill: var(--primary);
   }
   #dark-mode-toggle-760 .cs-sun {
     z-index: 1;
