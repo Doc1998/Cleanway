@@ -49,11 +49,16 @@ eleventyNavigation:
                 <input required type="text" id="phone" name="phone" placeholder="Phone">
       </label>
       <label>
-                How Did You Find Us
-                <input type="text" id="find" name="find-us" placeholder="How did you find us?">
-      </label>
+        Pick the service you need
+        <select name="services" id="cs-select-486">
+            <option value="full renovation">Window Cleaning</option>
+            <option value="sod install">Gutter Cleaning</option>
+            <option value="yard cleanup">Carpet Cleaning</option>
+            <option value="yard cleanup">Other</option>
+        </select>
+    </label>
       <label class="cs-label-message">
-                Message
+                Details
                 <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
       </label>
       <button class="cs-button-solid" type="submit">Submit Message</button>
