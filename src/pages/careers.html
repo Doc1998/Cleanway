@@ -1,0 +1,70 @@
+---
+layout: 'base.html'
+description: 'Meta description for the page'
+metaTitle: 'Title that shows up on google searches'
+tagTitle: 'Careers'
+preloadImg: '/images/cabinets2-1920w.webp'
+preloadCSS: '/css/contact.css'
+permalink: 'careers/'
+eleventyNavigation:
+    key: careers
+    order: 600
+---
+
+<!-- Enter html code below -->
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+  <h1 id="home-h">Careers</h1>
+  {% image './src/images/cabinets2.jpg', 'cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+</section>
+<!-- ============================================ -->
+<!--                    Form                      -->
+<!-- ============================================ -->
+
+<section id="cs-contact-486">
+  <div class="cs-container">
+      <div class="cs-content">
+          <h2 class="cs-title">Work with us! <span class="cs-color"></span></h2>
+          <p class="cs-text">
+            We are looking for cleaning technicians
+          </p>
+          <span class="cs-heading">Tell us about your skills!</span>
+          <span class="cs-heading">You can contact us on :</span>
+          <a href="mailto:careers@cleanway.ie" class="cs-link">careers@cleanway.ie</a>
+      </div>
+      <!--Form-->
+      <form id="cs-form-486" name="Contact Form" method="post">
+          <h3 class="cs-h3">Schedule Consult</h3>
+          <label class="cs-label">
+              Name
+              <input class="cs-input" required type="text" id="name-486" name="name" placeholder="Name">
+          </label>
+          <label class="cs-label">
+              Phone
+              <input class="cs-input" required type="text" id="phone-486" name="phone" placeholder="Phone">
+          </label>
+          <label class="cs-label">
+              Email
+              <input class="cs-input" required type="text" id="email-486" name="email" placeholder="Email">
+          </label>
+          <label class="cs-label">
+              How Did You Find Us
+              <input class="cs-input" type="text" id="find-486" name="find-us" placeholder="How did you find us?">
+          </label>
+          <label class="cs-label cs-label-message">
+              What can you help us with?
+              <select name="cars" id="cs-select-486">
+                  <option value="full renovation">Window Cleaning</option>
+                  <option value="sod install">House Cleaning</option>
+                  <option value="yard cleanup">Carpet Cleaning</option>
+              </select>
+          </label>
+          <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
+      </form>
+  </div>
+</section>
+                              
