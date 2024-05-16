@@ -38,29 +38,54 @@ eleventyNavigation:
       </div>
       <label>
                 Name
-                <input required type="text" id="name" name="name" placeholder="Name">
+                <input required type="text" id="name" name="name" placeholder="Name" class="top-label">
       </label>
       <label>
                 Email
-                <input required type="text" id="email" name="email" placeholder="Email">
+                <input required type="text" id="email" name="email" placeholder="Email" class="top-label">
       </label>
       <label>
                 Phone
-                <input required type="text" id="phone" name="phone" placeholder="Phone">
+                <input required type="text" id="phone" name="phone" placeholder="Phone" class="top-label">
       </label>
       <label>
         Address
-        <input required type="text" id="Address" name="Address" placeholder="Address">
+        <input required type="text" id="Address" name="Address" placeholder="Address" class="top-label">
       </label>
-      <label>
-        Pick the service you need
-        <select name="services" id="cs-select-486">
-            <option value="Window Cleaning">Window Cleaning</option>
-            <option value="Gutter Cleaning">Gutter Cleaning</option>
-            <option value="Carpet Cleaning">Carpet Cleaning</option>
-            <option value="Other">Other</option>
-        </select>
-    </label>
+ 
+        Service(s) you are interested in
+        <div class="check-boxes">
+            <div class="check-box-top">
+                <div class="check-box-item">
+                    <label class="cs-label">
+                        Carpet Cleaning
+                    </label>
+                    <input class="check-box-btn"  type="checkbox" id="hear-1467" name="carpet-cleaning-checkbox">
+                </div>
+                <div class="check-box-item">
+                    <label class="cs-label">
+                        Window Cleaning
+                    </label>
+                    <input class="check-box-btn" type="checkbox" id="hear-1467" name="rug-cleaning-checkbox">
+                </div>
+            </div>
+            <div class="check-box-bottom">
+                <div class="check-box-item">
+                    <label class="cs-label">
+                        Powerwash / Softwash
+                    </label>
+                    <input class="check-box-btn"  type="checkbox" id="hear-1467" name="tile-and-grout-cleaning-checkbox">
+                </div>
+                <div class="check-box-item">
+                    <label class="cs-label">
+                        Gutter Cleaning
+                    </label>
+                    <input class="check-box-btn"  type="checkbox" id="hear-1467" name="hardwood-cleaning-checkbox">
+                </div>
+          
+            </div>
+        </div>
+
       <label class="cs-label-message">
                 Details
                 <textarea required name="Message" id="message" placeholder="Write message..."></textarea>

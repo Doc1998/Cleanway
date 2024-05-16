@@ -24,6 +24,26 @@
     border: 1px solid #B4B2C7;
     background-color: transparent;
 }
+.check-boxes {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: .5em;
+}
+
+.check-box-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+ .cs-label{
+  font-size: .875em !important;
+  margin-right: .5em!important;
+}
+.check-box-btn{
+  width: 25px!important;
+  height: 25px!important;
+}
   #cs-contact {
     font-family: 'Roboto', 'Arial', sans-serif;
     padding: var(--sectionPadding);
@@ -257,6 +277,14 @@
   #cs-contact #cs-form .cs-label-message {
     width: 100%;
   }
+  .cs-label{
+    font-size: 1.25em !important;
+    margin-right: .5em!important;
+  }
+  .check-box-btn{
+    width: 35px !important;
+    height: 35px !important;
+  }
 }
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64em) {
@@ -267,12 +295,23 @@
     align-items: flex-start;
     gap: 5rem;
   }
+  .check-boxes .cs-label {
+    margin-right: .5em;
+    font-size: 0.775rem;
+  }
+  .check-boxes .check-box-btn {
+    margin-right: .5em;
+  }
+  .check-boxes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: .5em;
+  }
   #cs-contact #cs-form {
     max-width: 39.375rem;
   }
-  #cs-contact #cs-form label {
-    width: 100%;
-  }
+
   #cs-contact .cs-right-section {
     /* changes to 578px at 1300px wide */
     height: 42.875rem;
@@ -294,7 +333,7 @@
   #cs-contact #cs-form {
     column-gap: 0rem;
   }
-  #cs-contact #cs-form label {
+  .top-label {
     width: 48%;
     max-width: 19.0625rem;
   }
@@ -303,6 +342,22 @@
   }
   #cs-contact .cs-right-section {
     height: 36.125rem;
+  }
+  .check-boxes .cs-label {
+    margin-right: .5em;
+    font-size: 0.775rem;
+    max-width: 190.0625rem;
+    width: 100%;
+  }
+
+  .check-boxes .check-box-btn {
+    margin-right: .5em;
+  }
+  .check-boxes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: .5em;
   }
 }
 /* Dark Mode */
