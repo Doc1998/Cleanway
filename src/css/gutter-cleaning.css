@@ -195,32 +195,7 @@
       left: calc(clamp(1rem, 2.4vw, 1.75rem)*-1);
     }
   }
-  /* Dark Mode */
-  @media only screen and (min-width: 0rem) {
-    body.dark-mode #RTsbs-581 .cs-topper,
-    body.dark-mode #RTsbsr-581 .cs-topper,
-    body.dark-mode #RTsbst-581 .cs-topper {
-      color: var(--bodyTextColorWhite);
-    }
-    body.dark-mode #RTsbs-581 .cs-title,
-    body.dark-mode #RTsbsr-581 .cs-title,
-    body.dark-mode #RTsbst-581 .cs-title,
-    body.dark-mode #RTsbs-581 .cs-text,
-    body.dark-mode #RTsbsr-581 .cs-text,
-    body.dark-mode #RTsbst-581 .cs-text {
-      color: var(--bodyTextColorWhite);
-    }
-    body.dark-mode #RTsbs-581 .cs-text,
-    body.dark-mode #RTsbsr-581 .cs-text,
-    body.dark-mode #RTsbst-581 .cs-text {
-      opacity: .8;
-    }
-    body.dark-mode #RTsbs-581 .cs-picture:before,
-    body.dark-mode #RTsbsr-581 .cs-picture:before,
-    body.dark-mode #RTsbst-581 .cs-picture:before {
-      background-color: var(--accent);
-    }
-  }
+ 
   
   /*-- -------------------------- -->
   <---    Side By Side Reverse    -->
@@ -260,12 +235,7 @@
       right: calc(clamp(1rem, 2.4vw, 1.75rem)*-1);
     }
   }
-  /* Dark Mode */
-  @media only screen and (min-width: 0rem) {
-    body.dark-mode #RTsbsr-581 {
-      background-color: rgba(0, 0, 0, 0.2);
-    }
-  }
+
                                   
 
   /*-- -------------------------- -->
@@ -439,28 +409,6 @@
       z-index: -1;
       /* flips it horizontally */
       transform: scaleX(-1);
-    }
-  }
-  /* Dark Mode */
-  @media only screen and (min-width: 0rem) {
-    body.dark-mode #sbsr-684 .cs-topper .cs-color {
-      color: var(--primaryLight);
-    }
-    body.dark-mode #sbsr-684 .cs-title,
-    body.dark-mode #sbsr-684 .cs-text,
-    body.dark-mode #sbsr-684 .cs-h3,
-    body.dark-mode #sbsr-684 .cs-item-p {
-      color: var(--bodyTextColorWhite);
-    }
-    body.dark-mode #sbsr-684 .cs-text,
-    body.dark-mode #sbsr-684 .cs-item-p {
-      opacity: .8;
-    }
-    body.dark-mode #sbsr-684 .cs-icon {
-      filter: brightness(125%);
-    }
-    body.dark-mode #sbsr-684 .cs-graphic {
-      opacity: .2;
     }
   }
 
@@ -668,36 +616,7 @@
     padding: 0;
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #faq-853 .cs-topper {
-    color: var(--primaryLight);
-  }
-  body.dark-mode #faq-853 .cs-title,
-  body.dark-mode #faq-853 .cs-item-p {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #faq-853 .cs-faq-item {
-    border-color: rgba(255, 255, 255, 0.2);
-  }
-  body.dark-mode #faq-853 .cs-faq-item.active {
-    border-color: var(--primaryLight);
-  }
-  body.dark-mode #faq-853 .cs-faq-item.active .cs-button {
-    color: var(--primaryLight);
-  }
-  body.dark-mode #faq-853 .cs-faq-item.active .cs-button:before,
-  body.dark-mode #faq-853 .cs-faq-item.active .cs-button:after {
-    background-color: var(--primaryLight);
-  }
-  body.dark-mode #faq-853 .cs-button {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #faq-853 .cs-button:before,
-  body.dark-mode #faq-853 .cs-button:after {
-    background-color: var(--bodyTextColorWhite);
-  }
-}
+
 /*-- -------------------------- -->
 <---            Hero            -->
 <--- -------------------------- -*/
@@ -872,21 +791,7 @@
     transform: scaleX(-1);
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #hero-856 {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-  body.dark-mode #hero-856 .cs-title,
-  body.dark-mode #hero-856 .cs-text,
-  body.dark-mode #hero-856 .cs-number,
-  body.dark-mode #hero-856 .cs-desc {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #hero-856 .cs-wave path {
-    fill: var(--dark);
-  }
-}
+
 
 /*-- -------------------------- -->
 <---           Steps            -->
@@ -1060,31 +965,7 @@
       transform: rotate(40deg);
     }
   }
-  /* Dark Mode */
-  @media only screen and (min-width: 0rem) {
-    body.dark-mode #steps-889 .cs-topper {
-      color: #fff;
-    }
-    body.dark-mode #steps-889 .cs-title,
-    body.dark-mode #steps-889 .cs-text,
-    body.dark-mode #steps-889 .cs-h3,
-    body.dark-mode #steps-889 .cs-item-p {
-      color: var(--bodyTextColorWhite);
-    }
-    body.dark-mode #sbsr-684 .cs-topper{
-      color:#fff;
-    }
-    body.dark-mode #steps-889 .cs-text,
-    body.dark-mode #steps-889 .cs-item-p {
-      opacity: .8;
-    }
-    body.dark-mode #steps-889 .cs-picture {
-      background-color: var(--accent);
-    }
-    body.dark-mode #steps-889 .cs-arrow {
-      opacity: .5;
-    }
-  }
+
   /*-- -------------------------- -->
 <---          Process           -->
 <--- -------------------------- -*/
@@ -1225,12 +1106,7 @@
     width: clamp(23.45%, 22vw, 23.8%);
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #process-688 {
-    background-color: #2d3b35;
-  }
-}
+
  /*-- -------------------------- -->
 <---          Process           -->
 <--- -------------------------- -*/
@@ -1371,12 +1247,7 @@
     width: clamp(23.45%, 22vw, 23.8%);
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #process-688 {
-    background-color: #2d3b35;
-  }
-}
+
 /*-- -------------------------- -->
 <---          Pricing           -->
 <--- -------------------------- -*/
@@ -1701,53 +1572,7 @@
     grid-column: span 1;
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #pricing-1233 .cs-title,
-  body.dark-mode #pricing-1233 .cs-text,
-  body.dark-mode #pricing-1233 .cs-package,
-  body.dark-mode #pricing-1233 .cs-li,
-  body.dark-mode #pricing-1233 .cs-price,
-  body.dark-mode #pricing-1233 .cs-desc,
-  body.dark-mode #pricing-1233 .cs-time,
-  body.dark-mode #pricing-1233 .cs-includes {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #pricing-1233 .cs-text,
-  body.dark-mode #pricing-1233 .cs-time,
-  body.dark-mode #pricing-1233 .cs-desc,
-  body.dark-mode #pricing-1233 .cs-li {
-    opacity: .8;
-  }
-  body.dark-mode #pricing-1233 .cs-item {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-  body.dark-mode #pricing-1233 .cs-item-content {
-    border-color: rgba(255, 255, 255, 0.3);
-  }
-  body.dark-mode #pricing-1233 .cs-disabled {
-    opacity: .4;
-  }
-  body.dark-mode #pricing-1233 .cs-popular {
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-  body.dark-mode #pricing-1233 .cs-popular .cs-price,
-  body.dark-mode #pricing-1233 .cs-popular .cs-package {
-    color: var(--primary);
-  }
-  body.dark-mode #pricing-1233 .cs-popular .cs-disabled {
-    opacity: .9;
-  }
-  body.dark-mode #pricing-1233 .cs-button-solid {
-    transition: color .3s;
-  }
-  body.dark-mode #pricing-1233 .cs-button-solid:hover {
-    color: var(--primary);
-  }
-  body.dark-mode #pricing-1233 .cs-button-solid:before {
-    background-color: #fff;
-  }
-}
+
  /*-- -------------------------- -->
 <---           Hero             -->
 <--- -------------------------- -*/
@@ -1957,30 +1782,7 @@
     opacity: 1;
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #hero-331 .cs-background {
-    background-color: #000;
-  }
-  body.dark-mode #hero-331 .cs-background:before {
-    width: 100%;
-    background: -moz-linear-gradient(left, #000000 21%, rgba(0, 0, 0, 0.67) 47%, rgba(255, 255, 255, 0) 100%);
-    background: -webkit-linear-gradient(left, #000000 21%, rgba(0, 0, 0, 0.67) 47%, rgba(255, 255, 255, 0) 100%);
-    background: linear-gradient(to right, #000000 21%, rgba(0, 0, 0, 0.67) 47%, rgba(255, 255, 255, 0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#00ffffff', GradientType=1);
-    opacity: 1;
-  }
-  body.dark-mode #hero-331 .cs-background img {
-    opacity: .5;
-  }
-  body.dark-mode #hero-331 .cs-title {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #hero-331 .cs-text {
-    color: var(--bodyTextColorWhite);
-    opacity: .8;
-  }
-}
+
 
 /*-- -------------------------- -->
 <---          Services          -->
@@ -2090,19 +1892,7 @@
     text-align: left;
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #services-331 .cs-item {
-    background-color: var(--accent);
-  }
-  body.dark-mode #services-331 .cs-icon-wrapper {
-    background-color: var(--medium);
-  }
-  body.dark-mode #services-331 .cs-header,
-  body.dark-mode #services-331 .cs-desc {
-    color: var(--bodyTextColorWhite);
-  }
-}
+
  /*-- -------------------------- -->
 <---           Hero             -->
 <--- -------------------------- -*/
@@ -2607,30 +2397,7 @@
     display: none;
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #hero-1467 .cs-right {
-    background-color: var(--medium);
-  }
-  body.dark-mode #hero-1467 .cs-h3,
-  body.dark-mode #hero-1467 .cs-form-text,
-  body.dark-mode #hero-1467 .cs-label,
-  body.dark-mode #hero-1467 .cs-disclaimer {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #hero-1467 .cs-disclaimer-icon {
-    /* turns it white */
-    filter: grayscale(1) brightness(1000%);
-  }
-  body.dark-mode #hero-1467 .cs-input,
-  body.dark-mode #hero-1467 select {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #hero-1467 .cs-form-text {
-    opacity: .8;
-  }
-}                                                                      
+                                                                     
  /*-- -------------------------- -->
 <---         Gallery            -->
 <--- -------------------------- -*/
@@ -2776,20 +2543,138 @@
     min-height: clamp(17.5rem, 37vw, 26.25rem);
   }
 }
-/* Dark Mode */
+/*-- -------------------------- -->
+<---          Reviews           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #gallery-1716 .cs-title,
-  body.dark-mode #gallery-1716 .cs-text {
-    color: var(--bodyTextColorWhite);
+  #reviews-1672 {
+    padding: var(--sectionPadding);
   }
-  body.dark-mode #gallery-1716 .cs-text {
-    opacity: .8;
+  #reviews-1672 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 40px - 64px */
+    gap: clamp(2.5rem, 4.5vw, 4rem);
   }
-  body.dark-mode #gallery-1716 .cs-text:last-of-type:before {
-    background-color: rgba(0, 0, 0, 0.3);
-    opacity: 1;
+  #reviews-1672 .cs-content {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #reviews-1672 .cs-title {
+    margin: 0rem;
+  }
+  #reviews-1672 .cs-card-group {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* 16px - 20px */
+    gap: clamp(1rem, 2.5vw, 1.25rem);
+  }
+  #reviews-1672 .cs-item {
+    list-style: none;
+    width: 100%;
+    /* 20px - 40px top & bottom */
+    /* 20px - 40px left & right */
+    padding: clamp(1.25rem, 3.15vw, 2.5rem) clamp(1.25rem, 3.15vw, 2.5rem);
+    background-color: #f7f7f7;
+    /* prevents padding from adding to height and width */
+    box-sizing: border-box;
+    display: flex;
+    grid-column: span 12;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    /* 24px - 48px */
+    gap: clamp(1.5rem, 4vw, 3rem);
+  }
+  #reviews-1672 .cs-flex-group {
+    /* this margin top auto will push everything up and force the cs-flex-group to the bottom of the container. This is to account for review cards with different heights because of more or less text and makes the cards more responsive to changing text */
+    margin-top: auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  #reviews-1672 .cs-profile {
+    width: 3.25rem;
+    height: auto;
+    border-radius: 50%;
+    position: relative;
+    display: block;
+  }
+  #reviews-1672 .cs-profile img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* makes the image behave like a background image */
+    object-fit: cover;
+  }
+  #reviews-1672 .cs-name {
+    /* 20px - 25px */
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0;
+    /* in case one card has more text than the other, this pushes up against the review text so the name and title are always at the bottom. Only works if parent is a flexbox */
+    margin-top: auto;
+    color: var(--headerColor);
+    display: block;
+  }
+  #reviews-1672 .cs-job {
+    /* 14px - 16px */
+    font-size: 1rem;
+    line-height: 1.5em;
+    font-weight: 400;
+    margin: 0;
+    color: var(--bodyTextColor);
+    display: block;
+  }
+  #reviews-1672 .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  #reviews-1672 .cs-item-stars {
+    width: 6.75rem;
+    height: auto;
+  }
+  #reviews-1672 .cs-review {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.6vw, 1.25rem);
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
+    z-index: 1;
+  }
+  #reviews-1672 .cs-quote {
+    width: 5.375rem;
+    height: auto;
+    position: absolute;
+    right: 0rem;
+    bottom: 0rem;
+    z-index: 0;
   }
 }
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #reviews-1672 .cs-item {
+    grid-column: span 4;
+  }
+}
+                                
                                                                  
                                 
                                 

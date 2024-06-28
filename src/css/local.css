@@ -202,28 +202,7 @@
     z-index: -1;
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #why-choose-682 .cs-topperm .cs-color {
-    color: var(--primaryLight);
-  }
-  body.dark-mode #why-choose-682 .cs-title,
-  body.dark-mode #why-choose-682 .cs-text,
-  body.dark-mode #why-choose-682 .cs-h3,
-  body.dark-mode #why-choose-682 .cs-item-p {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #why-choose-682 .cs-text,
-  body.dark-mode #why-choose-682 .cs-item-p {
-    opacity: .8;
-  }
-  body.dark-mode #why-choose-682 .cs-icon {
-    filter: brightness(125%);
-  }
-  body.dark-mode #why-choose-682 .cs-graphic {
-    opacity: .5;
-  }
-}
+
                                 
 /*-- -------------------------- -->
 <---       Side By Side         -->
@@ -377,38 +356,7 @@
     margin: 0;
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode #sbs-r .cs-left:before,
-  body.dark-mode #sbs-r .cs-left:after {
-    background: var(--accent);
-  }
-  body.dark-mode #sbs-r .cs-picture2 {
-    background-color: var(--dark);
-    /* 6px - 12px */
-    border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
-  }
-  body.dark-mode #sbs-r .cs-topper {
-    color: var(--primaryLight);
-  }
-  body.dark-mode #sbs-r .cs-title,
-  body.dark-mode #sbs-r .cs-text,
-  body.dark-mode #sbs-r .cs-h3,
-  body.dark-mode #sbs-r .cs-flex-p,
-  body.dark-mode #sbs-r .cs-name {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #sbs-r .cs-flex-group {
-    background-color: var(--accent);
-  }
-  body.dark-mode #sbs-r .cs-job {
-    color: var(--bodyTextColorWhite);
-    opacity: .8;
-  }
-  body.dark-mode #sbs-r .cs-quote-icon {
-    opacity: .2;
-  }
-}
+
 /*-- -------------------------- -->
 <---       Side By Side         -->
 <--- -------------------------- -*/
@@ -660,30 +608,7 @@
     flex: none;
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #sbs-r-370 .cs-topper {
-    color: var(--primaryLight);
-  }
-  body.dark-mode #sbs-r-370 .cs-title,
-  body.dark-mode #sbs-r-370 .cs-h3,
-  body.dark-mode #sbs-r-370 .cs-li-p {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #sbs-r-370 .cs-li-p {
-    opacity: .8;
-  }
-  body.dark-mode #sbs-r-370 .cs-left-image,
-  body.dark-mode #sbs-r-370 .cs-bottom-image {
-    border-color: var(--accent);
-  }
-  body.dark-mode #sbs-r-370 .cs-splash {
-    filter: grayscale(0.5) brightness(220%);
-  }
-  body.dark-mode #sbs-r-370 .cs-mask path {
-    fill: var(--dark);
-  }
-}
+
 /*-- -------------------------- -->
 <---       Why Choose Us        -->
 <--- -------------------------- -*/
@@ -949,30 +874,7 @@
     flex: none;
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #why-choose-375 .cs-topper {
-    color: var(--primaryLight);
-  }
-  body.dark-mode #why-choose-375 .cs-title,
-  body.dark-mode #why-choose-375 .cs-h3,
-  body.dark-mode #why-choose-375 .cs-li-p {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #why-choose-375 .cs-li-p {
-    opacity: .8;
-  }
-  body.dark-mode #why-choose-375 .cs-left-image,
-  body.dark-mode #why-choose-375 .cs-bottom-image {
-    border-color: var(--accent);
-  }
-  body.dark-mode #why-choose-375 .cs-splash {
-    filter: grayscale(0.5) brightness(220%);
-  }
-  body.dark-mode #why-choose-375 .cs-mask path {
-    fill: var(--dark);
-  }
-}
+
  /*-- -------------------------- -->
 <---          Services          -->
 <--- -------------------------- -*/
@@ -1297,28 +1199,7 @@
     column-gap: clamp(1rem, 2vw, 1.25rem);
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode #services-366 .cs-topper {
-    color: var(--primaryLight);
-  }
-  body.dark-mode #services-366 .cs-title,
-  body.dark-mode #services-366 .cs-text,
-  body.dark-mode #services-366 .cs-h3,
-  body.dark-mode #services-366 .cs-item-p {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #services-366 .cs-icon-wrapper:before,
-  body.dark-mode #services-366 .cs-bubble:before,
-  body.dark-mode #services-366 .cs-icon-wrapper:after,
-  body.dark-mode #services-366 .cs-bubble:after {
-    background-color: var(--accent);
-  }
-  body.dark-mode #services-366 .cs-icon {
-    /* turns the icon white */
-    filter: grayscale(1) brightness(1000%);
-  }
-}
+
                                                                                             
 /*-- -------------------------- -->
 <---    Final Call To Action    -->
@@ -1432,12 +1313,7 @@
     z-index: 1;
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode #cta:after {
-    display: none;
-  }
-}
+
 /*-- -------------------------- -->
 <---           Steps            -->
 <--- -------------------------- -*/
@@ -1655,26 +1531,7 @@
     transform: translateX(-50%);
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #steps-277 .cs-topper {
-    color: var(--primaryLight);
-  }
-  body.dark-mode #steps-277 .cs-title,
-  body.dark-mode #steps-277 .cs-text,
-  body.dark-mode #steps-277 .cs-item-text {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #steps-277 .cs-text {
-    opacity: .8;
-  }
-  body.dark-mode #steps-277 .cs-card-group:before {
-    background: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #steps-277 .cs-number:before {
-    background-color: var(--bodyTextColorWhite);
-  }
-}
+
 /*-- -------------------------- -->
 <---          Gallery           -->
 <--- -------------------------- -*/
@@ -1869,17 +1726,7 @@
     aspect-ratio: 1;
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #gallery-406 .cs-topper {
-    color: var(--primaryLight);
-  }
-  body.dark-mode #gallery-406 .cs-title,
-  body.dark-mode #gallery-406 .cs-text,
-  body.dark-mode #gallery-406 .cs-button {
-    color: var(--bodyTextColorWhite);
-  }
-}
+
 /*-- -------------------------- -->
 <---          Process           -->
 <--- -------------------------- -*/
@@ -2020,12 +1867,7 @@
     width: clamp(23.45%, 22vw, 23.8%);
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #process-688 {
-    background-color: #2d3b35;
-  }
-}
+
 /*-- -------------------------- -->
 <---           Hero             -->
 <--- -------------------------- -*/
@@ -2330,7 +2172,488 @@
       opacity: 1;
   }
 }
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0em) {
+  #sbs {
+    padding: var(--sectionPadding);
+  }
+  #sbs .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2.5rem;
+  }
+  #sbs .cs-left {
+    /* scaling the font size with the view width */
+    font-size: min(2.31vw, .7em);
+    /* using ems so we can use font size to scale the whole section */
+    width: 39.4375em;
+    height: 39.75em;
+    position: relative;
+  }
+  #sbs .cs-picture {
+    border-radius: 1.5em;
+    /* clips img tag corners */
+    overflow: hidden;
+    position: absolute;
+    display: block;
+  }
+  #sbs .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* makes image act like a background image */
+    object-fit: cover;
+  }
+  #sbs .cs-picture1 {
+    width: 32.625em;
+    height: 36.3125em;
+    left: 0;
+    top: 0;
+  }
+  #sbs .cs-picture2 {
+    width: 25.875em;
+    height: 25em;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
+    /* 6px - 12px */
+    border: clamp(0.375em, 1.5vw, 0.75em) solid #ffffff;
+    right: 0;
+    bottom: 0;
+  }
+  #sbs .cs-right {
+    margin: auto;
+    max-width: 33.875rem;
+  }
+  #sbs .cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  #sbs .cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: left;
+    max-width: 50rem;
+    margin: 0 auto 1rem;
+    color: var(--headerColor);
+    position: relative;
+  }
+  #sbs .cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: left;
+    width: 100%;
+    max-width: 46.875rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    color: var(--bodyTextColor);
+  }
+  #sbs .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #sbs .cs-flex-group {
+    /* 16px - 32px */
+    padding: clamp(1rem, 3vw, 2rem);
+    background-color: #F7F7F7;
+    border-radius: 1rem;
+    position: relative;
+  }
+  #sbs .cs-flex-p {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    margin: 0 0 1rem;
+    color: #767676;
+  }
+  #sbs .cs-name {
+    font-size: 1rem;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 0 0.25rem;
+    color: var(--headerColor);
+    display: block;
+  }
+  #sbs .cs-job {
+    font-size: 0.875rem;
+    line-height: 1.5em;
+    color: #767676;
+    display: block;
+  }
+  #sbs .cs-quote-icon {
+    /* 60px - 136px */
+    width: clamp(3.75rem, 10vw, 8.5rem);
+    height: auto;
+    position: absolute;
+    bottom: 0rem;
+    /* 16px - 32px */
+    right: clamp(1rem, 4vw, 2rem);
+  }
+  #sbs .button-solid {
+    margin-top: 2rem;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64em) {
+  #sbs .cs-container {
+    flex-flow: row;
+    justify-content: space-between;
+    gap: 3.25rem;
+  }
+  #sbs .cs-left {
+    font-size: min(1.2vw, 1em);
+    flex: none;
+  }
+  #sbs .cs-right {
+    margin: 0;
+  }
+}
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
 
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #RTsbs-581,
+  #RTsbsr-581,
+  #RTsbst-581 {
+    /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
+    font-family: 'Roboto', 'Arial', sans-serif;
+  }
+  #RTsbs-581 .cs-container,
+  #RTsbsr-581 .cs-container,
+  #RTsbst-581 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 7vw, 4rem);
+  }
+  #RTsbs-581 .cs-content,
+  #RTsbsr-581 .cs-content,
+  #RTsbst-581 .cs-content {
+    /* set text aling to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    max-width: 32.625rem;
+    /* moved section padding to the .cs-content so we can have the cs-picture be full width on mobile without the padding preventing it from doing so */
+    padding: var(--sectionPadding);
+    padding-top: 0;
+    /* prevents padding from affecting width and height */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #RTsbs-581 .cs-topper,
+  #RTsbsr-581 .cs-topper,
+  #RTsbst-581 .cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  #RTsbs-581 .cs-title,
+  #RTsbsr-581 .cs-title,
+  #RTsbst-581 .cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 43.75rem;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    position: relative;
+  }
+  #RTsbs-581 .cs-text,
+  #RTsbsr-581 .cs-text,
+  #RTsbst-581 .cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+  #RTsbs-581 .cs-text,
+  #RTsbsr-581 .cs-text,
+  #RTsbst-581 .cs-text {
+    /* Override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This selector is a section specific override that stays inside this stitch */
+    margin-bottom: 1rem;
+  }
+  #RTsbs-581 .cs-text:last-of-type,
+  #RTsbsr-581 .cs-text:last-of-type,
+  #RTsbst-581 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #RTsbs-581 .cs-button-solid,
+  #RTsbsr-581 .cs-button-solid,
+  #RTsbst-581 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #RTsbs-581 .cs-button-solid:before,
+  #RTsbsr-581 .cs-button-solid:before,
+  #RTsbst-581 .cs-button-solid:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width .3s;
+  }
+  #RTsbs-581 .cs-button-solid:hover:before,
+  #RTsbsr-581 .cs-button-solid:hover:before,
+  #RTsbst-581 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #RTsbs-581 .cs-picture,
+  #RTsbsr-581 .cs-picture,
+  #RTsbst-581 .cs-picture {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 18.75rem;
+  }
+  #RTsbs-581 .cs-picture img,
+  #RTsbsr-581 .cs-picture img,
+  #RTsbst-581 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #RTsbs-581,
+  #RTsbsr-581,
+  #RTsbst-581 {
+    padding: var(--sectionPadding);
+  }
+  #RTsbs-581 .cs-container,
+  #RTsbsr-581 .cs-container,
+  #RTsbst-581 .cs-container {
+    flex-direction: row;
+    justify-content: flex-start;
+    /* 60px - 128px */
+    gap: clamp(3.75rem, 10vw, 8rem);
+  }
+  #RTsbs-581 .cs-content,
+  #RTsbsr-581 .cs-content,
+  #RTsbst-581 .cs-content {
+    width: 53%;
+    /* reset the padding, add the section padding back to the section container */
+    padding: 0;
+  }
+  #RTsbs-581 .cs-picture,
+  #RTsbsr-581 .cs-picture,
+  #RTsbst-581 .cs-picture {
+    width: 47vw;
+    max-width: 30.875rem;
+    /* 518px - 700px */
+    height: clamp(32.375rem, 63vw, 43.75rem);
+    /* 16px - 28px, added margin left and bottom to cs-picture so it pushes away by the same amount the yellow box element overlaps it left and bottom. This maintains consistent spacing left and bottom */
+    margin: 0 0 clamp(1rem, 2.4vw, 1.75rem) clamp(1rem, 2.4vw, 1.75rem);
+    position: relative;
+  }
+  #RTsbs-581 .cs-picture:before,
+  #RTsbsr-581 .cs-picture:before,
+  #RTsbst-581 .cs-picture:before {
+    /* yellow box */
+    content: '';
+    width: 50%;
+    height: 60%;
+    background: var(--secondary);
+    opacity: 1;
+    display: block;
+    position: absolute;
+    /* 16px - 28px, wrapped in calc function to multiple by negative 1 and get a negative clamp value */
+    bottom: calc(clamp(1rem, 2.4vw, 1.75rem)*-1);
+    left: calc(clamp(1rem, 2.4vw, 1.75rem)*-1);
+  }
+}
+/*-- -------------------------- -->
+<---          Reviews           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #reviews-1672 {
+    padding: var(--sectionPadding);
+  }
+  #reviews-1672 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 40px - 64px */
+    gap: clamp(2.5rem, 4.5vw, 4rem);
+  }
+  #reviews-1672 .cs-content {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #reviews-1672 .cs-title {
+    margin: 0rem;
+  }
+  #reviews-1672 .cs-card-group {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* 16px - 20px */
+    gap: clamp(1rem, 2.5vw, 1.25rem);
+  }
+  #reviews-1672 .cs-item {
+    list-style: none;
+    width: 100%;
+    /* 20px - 40px top & bottom */
+    /* 20px - 40px left & right */
+    padding: clamp(1.25rem, 3.15vw, 2.5rem) clamp(1.25rem, 3.15vw, 2.5rem);
+    background-color: #f7f7f7;
+    /* prevents padding from adding to height and width */
+    box-sizing: border-box;
+    display: flex;
+    grid-column: span 12;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    /* 24px - 48px */
+    gap: clamp(1.5rem, 4vw, 3rem);
+  }
+  #reviews-1672 .cs-flex-group {
+    /* this margin top auto will push everything up and force the cs-flex-group to the bottom of the container. This is to account for review cards with different heights because of more or less text and makes the cards more responsive to changing text */
+    margin-top: auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  #reviews-1672 .cs-profile {
+    width: 3.25rem;
+    height: auto;
+    border-radius: 50%;
+    position: relative;
+    display: block;
+  }
+  #reviews-1672 .cs-profile img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* makes the image behave like a background image */
+    object-fit: cover;
+  }
+  #reviews-1672 .cs-name {
+    /* 20px - 25px */
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0;
+    /* in case one card has more text than the other, this pushes up against the review text so the name and title are always at the bottom. Only works if parent is a flexbox */
+    margin-top: auto;
+    color: var(--headerColor);
+    display: block;
+  }
+  #reviews-1672 .cs-job {
+    /* 14px - 16px */
+    font-size: 1rem;
+    line-height: 1.5em;
+    font-weight: 400;
+    margin: 0;
+    color: var(--bodyTextColor);
+    display: block;
+  }
+  #reviews-1672 .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  #reviews-1672 .cs-item-stars {
+    width: 6.75rem;
+    height: auto;
+  }
+  #reviews-1672 .cs-review {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.6vw, 1.25rem);
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
+    z-index: 1;
+  }
+  #reviews-1672 .cs-quote {
+    width: 5.375rem;
+    height: auto;
+    position: absolute;
+    right: 0rem;
+    bottom: 0rem;
+    z-index: 0;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #reviews-1672 .cs-item {
+    grid-column: span 4;
+  }
+}
+                                
                                                              
                                                                
                                   

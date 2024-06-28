@@ -182,37 +182,7 @@
       flex: none;
     }
   }
-  /* Dark Mode */
-  @media only screen and (min-width: 0rem) {
-    body.dark-mode #sbs-97 .cs-picture:before,
-    body.dark-mode #sbs-97 .cs-picture:after {
-      background: var(--accent);
-    }
-    body.dark-mode #sbs-97 .cs-topper {
-      color: var(--primaryLight);
-    }
-    body.dark-mode #sbs-97 .cs-text,
-    body.dark-mode #sbs-97 .cs-li,
-    body.dark-mode #sbs-97 .cs-title {
-      color: var(--bodyTextColorWhite);
-    }
-    body.dark-mode #sbs-97 .cs-text {
-      opacity: .8;
-    }
-    body.dark-mode #sbs-97 .cs-number {
-      font-weight: bold;
-      color: #000;
-      background-color: var(--primaryLight);
-    }
-    body.dark-mode #sbs-97 .cs-button-solid {
-      background-color: var(--primaryLight);
-      color: #000;
-      transition: color .3s;
-    }
-    body.dark-mode #sbs-97 .cs-button-solid:hover {
-      color: #FAFBFC;
-    }
-  }
+ 
                                   
   
   /*-- -------------------------- -->
@@ -253,12 +223,7 @@
       right: calc(clamp(1rem, 2.4vw, 1.75rem)*-1);
     }
   }
-  /* Dark Mode */
-  @media only screen and (min-width: 0rem) {
-    body.dark-mode #RTsbsr-581 {
-      background-color: rgba(0, 0, 0, 0.2);
-    }
-  }
+ 
                                   
 
   /*-- -------------------------- -->
@@ -434,28 +399,7 @@
       transform: scaleX(-1);
     }
   }
-  /* Dark Mode */
-  @media only screen and (min-width: 0rem) {
-    body.dark-mode #sbsr-684 .cs-topper .cs-color {
-      color: var(--primaryLight);
-    }
-    body.dark-mode #sbsr-684 .cs-title,
-    body.dark-mode #sbsr-684 .cs-text,
-    body.dark-mode #sbsr-684 .cs-h3,
-    body.dark-mode #sbsr-684 .cs-item-p {
-      color: var(--bodyTextColorWhite);
-    }
-    body.dark-mode #sbsr-684 .cs-text,
-    body.dark-mode #sbsr-684 .cs-item-p {
-      opacity: .8;
-    }
-    body.dark-mode #sbsr-684 .cs-icon {
-      filter: brightness(125%);
-    }
-    body.dark-mode #sbsr-684 .cs-graphic {
-      opacity: .2;
-    }
-  }
+
 
 /*-- -------------------------- -->
 <---            FAQ             -->
@@ -621,35 +565,7 @@
       transition: opacity 0.3s, padding-bottom 0.3s;
     }
   }
-  /* Dark Mode */
-  @media only screen and (min-width: 0rem) {
-    body.dark-mode #faq-326 .cs-topper {
-      color: var(--secondaryLight);
-    }
-    body.dark-mode #faq-326 .cs-title,
-    body.dark-mode #faq-326 .cs-item-p {
-      color: var(--bodyTextColorWhite);
-    }
-    body.dark-mode #faq-326 .cs-faq-item {
-      background-color: var(--accent);
-    }
-    body.dark-mode #faq-326 .cs-faq-item.active .cs-button {
-      background-color: var(--secondaryLight);
-      color: var(--primary);
-    }
-    body.dark-mode #faq-326 .cs-faq-item.active .cs-button:before,
-    body.dark-mode #faq-326 .cs-faq-item.active .cs-button:after {
-      background-color: var(--primary);
-    }
-    body.dark-mode #faq-326 .cs-button {
-      background-color: var(--accent);
-      color: var(--bodyTextColorWhite);
-    }
-    body.dark-mode #faq-326 .cs-button:before,
-    body.dark-mode #faq-326 .cs-button:after {
-      background-color: var(--bodyTextColorWhite);
-    }
-  }
+ 
                                   
 /*-- -------------------------- -->
 <---            Hero            -->
@@ -825,21 +741,7 @@
     transform: scaleX(-1);
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #hero-856 {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-  body.dark-mode #hero-856 .cs-title,
-  body.dark-mode #hero-856 .cs-text,
-  body.dark-mode #hero-856 .cs-number,
-  body.dark-mode #hero-856 .cs-desc {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #hero-856 .cs-wave path {
-    fill: var(--dark);
-  }
-}
+
 
 /*-- -------------------------- -->
 <---           Steps            -->
@@ -1060,27 +962,7 @@
       transform: translateX(-50%);
     }
   }
-  /* Dark Mode */
-  @media only screen and (min-width: 0rem) {
-    body.dark-mode #steps-276 .cs-topper {
-      color: var(--primaryLight);
-    }
-    body.dark-mode #steps-276 .cs-title,
-    body.dark-mode #steps-276 .cs-text,
-    body.dark-mode #steps-276 .cs-item-text {
-      color: var(--bodyTextColorWhite);
-    }
-    body.dark-mode #steps-276 .cs-text {
-      opacity: .8;
-    }
-    body.dark-mode #steps-276 .cs-card-group:before {
-      background: var(--bodyTextColorWhite);
-    }
-    body.dark-mode #steps-276 .cs-number:before {
-      background-color: var(--bodyTextColorWhite);
-    }
-  }
-                                  
+                             
                                   
                                 
                                 
