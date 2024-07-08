@@ -1,7 +1,7 @@
 ---
 layout: 'base.html'
-description: 'Meta description for the page'
-metaTitle: 'Title that shows up on google searches'
+description: 'The highest quality cleaning company. Based in Cork & Limerick we we provide commerical and residential cleaning services'
+metaTitle: 'Contact'
 tagTitle: 'Contact'
 preloadImg: '/images/cabinets2-1920w.webp'
 preloadCSS: '/css/contact.css'
@@ -55,6 +55,7 @@ eleventyNavigation:
  
         Service(s) you are interested in
         <div class="check-boxes">
+          <!--
             <div class="check-box-top">
                 <div class="check-box-item">
                     <label class="cs-label">
@@ -69,13 +70,16 @@ eleventyNavigation:
                     <input class="check-box-btn" type="checkbox" id="hear-1467" name="window-cleaning-checkbox">
                 </div>
             </div>
+            -->
             <div class="check-box-bottom">
+              <!--
                 <div class="check-box-item">
                     <label class="cs-label">
                         Powerwash / Softwash
                     </label>
                     <input class="check-box-btn"  type="checkbox" id="hear-1467" name="powerwashing-checkbox">
                 </div>
+              -->
                 <div class="check-box-item">
                     <label class="cs-label">
                         Gutter Cleaning
@@ -108,3 +112,28 @@ eleventyNavigation:
     </div>
   </div>
 </section>
+
+  <script>
+      document.getElementById('cs-form').addEventListener('submit', async function(event) {
+          event.preventDefault();
+
+          const form = event.target;
+          const formData = new FormData(form);
+          const statusDiv = document.getElementById('form-status');
+
+          try {
+              const response = await fetch('https://hooks.zapier.com/hooks/catch/17860884/23koh86/', {
+                  method: 'POST',
+                  body: formData
+              });
+
+              if (response.ok) {
+                window.location.href = '/thank-you';
+              } else {
+                  statusDiv.innerHTML = '<p>There was a problem with your submission. Please try again later.</p>';
+              }
+          } catch (error) {
+              statusDiv.innerHTML = '<p>There was a problem with your submission. Please try again later.</p>';
+          }
+      });
+  </script>
