@@ -1,5 +1,5 @@
 ---
-layout: 'base.html'
+layout: 'ad-base.html'
 description: 'Gutter Cleaning Limerick, Your Gutters are cleared by the use of a ground based vacuum system to remove solid matter such as leaf residue and moss build up.'
 metaTitle: 'Gutter Cleaning Limerick'
 tagTitle: 'Gutter Cleaning Limerick'
@@ -13,7 +13,7 @@ permalink: 'gutter-cleaning-limerick-special/'
 <!--                    Hero                      -->
 <!-- ============================================ -->
 
-<section id="hero-331">
+<section id="hero-999" >
     <div class="cs-container">
         <div class="cs-flex-group">
             <h1 class="cs-topper">Gutter Cleaning Limerick</h1>
@@ -31,8 +31,104 @@ permalink: 'gutter-cleaning-limerick-special/'
                 </a>
             </div>
         </div>
+        
     </div>
-
+    <div class="cs-right">
+        <span class="cs-tag">
+            Online Special
+            <span class="cs-dot" aria-hidden="true"></span>
+        </span>
+        <div class="cs-flex">
+            <h3 class="cs-h3">MID SUMMER SPECIAL 10% OFF</h3>
+            <span class="cs-expires">*Offer Expires July 26th</span>
+            <p class="cs-form-text">
+                Request a free* No-Obligation quote & book your cleaning today!
+            </p>
+        </div>
+        <form class="cs-form" id="cs-form-1467" name="Contact Form Cork" method="post" data-netlify="true">
+            <label class="cs-label">
+                First Name
+                <input class="cs-input" required type="text" id="name-1467" name="name">
+            </label>
+            <label class="cs-label">
+                Last Name
+                <input class="cs-input" required type="text" id="name-1467" name="name">
+            </label>
+            <label class="cs-label">
+                Phone
+                <input class="cs-input" required type="tel" id="phone-1467" name="phone">
+            </label>
+            <label class="cs-label">
+                Email
+                <input class="cs-input" required type="email" id="email-1467" name="email">
+            </label>
+            <!--
+            <label class="cs-label">
+                How many sides of Gutters need Cleaning?
+                <div class="check-boxes">
+                    <div class="check-box-top">
+                        <div class="check-box-item">
+                            <label class="cs-label">
+                                One Side
+                            </label>
+                            <input class="check-box-btn"  type="checkbox" style="width: 30px; height: 30px;" id="hear-1467" name="gutter-1-side">
+                        </div>
+                        <div class="check-box-item">
+                            <label class="cs-label">
+                                Two Sides
+                            </label>
+                            <input class="check-box-btn" style="width: 30px; height: 30px;"  type="checkbox" id="hear-1467" name="gutter-2-sides">
+                        </div>
+                    </div>
+                    <div class="check-box-bottom">
+                        <div class="check-box-item">
+                            <label class="cs-label">
+                                Three Sides
+                            </label>
+                            <input class="check-box-btn"  type="checkbox" style="width: 30px; height: 30px;" id="hear-1467" name="gutter-3-sides">
+                        </div>
+                        <div class="check-box-item">
+                            <label class="cs-label">
+                                Four Sides
+                            </label>
+                            <input class="check-box-btn"  type="checkbox" style="width: 30px; height: 30px;" id="hear-1467" name="gutter-4-sides">
+                        </div>
+                    </div>
+                </div>
+            </label>
+            -->
+            <!--
+            <label class="cs-label">
+                Do you need Fascia and Soffit Cleaned?
+                <div class="check-boxes">
+                    <div class="check-box-top">
+                        <div class="check-box-item">
+                            <label class="cs-label">
+                                Yes
+                            </label>
+                            <input class="check-box-btn"  type="checkbox" style="width: 30px; height: 30px;" id="hear-1467" name="fascia-soffit-yes">
+                        </div>
+                    </div>
+                    <div class="check-box-bottom">
+                        <div class="check-box-item">
+                            <label class="cs-label">
+                                No
+                            </label>
+                            <input class="check-box-btn"  type="checkbox" style="width: 30px; height: 30px;" id="hear-1467" name="fascia-soffit-no">
+                        </div>
+                    </div>
+                </div>
+            </label>
+            
+            <label class="cs-label cs-message">
+                Message
+                <textarea class="cs-input cs-textarea" required name="Message" id="message-1467"></textarea>
+            </label>
+        -->
+            <button onclick="return gtag_report_conversion('type=submit')" class="cs-button-solid cs-submit" type="submit">Get Quote</button>
+        </form>
+    </div>
+      <!--Form-->
     <!-- Background Image -->
     <picture class="cs-background">
         <source media="(max-width: 600px)" srcset="/assets/images/RGutter-stock-1.webp">
@@ -40,6 +136,19 @@ permalink: 'gutter-cleaning-limerick-special/'
         <img decoding="async" src="/assets/images/RGutter-stock-1.webp" alt="cleaner" width="2250" height="1500" aria-hidden="true">
     </picture>
 </section>                
+
+<!-- ============================================ -->
+<!--                   Logos                      -->
+<!-- ============================================ -->
+
+<section id="logos-572">
+    <div class="cs-container">
+        <!--Ideally you want to use svg's for the file path image, which is why these aren't wrapped in picture elements for different screen sizes-->
+        <img class="cs-logo" src="/assets/images/Google-5-removebg-preview.png" alt="logo" width="287" height="65" loading="lazy" decoding="async">
+        <img class="cs-logo" src="/assets/images/skyvac-logo.webp" alt="logo" width="229" height="55" loading="lazy" decoding="async">
+        <img class="cs-logo" src="/assets/images/logo-facebook.png" alt="logo" width="235" height="33" loading="lazy" decoding="async">
+    </div>
+</section>
 
 <!-- ============================================ -->
 <!--                 Side By Side                 -->
@@ -292,3 +401,27 @@ permalink: 'gutter-cleaning-limerick-special/'
 </section>
                                 
                                 
+<script>
+    document.getElementById('cs-form-1467').addEventListener('submit', async function(event) {
+        event.preventDefault();
+
+        const form = event.target;
+        const formData = new FormData(form);
+        const statusDiv = document.getElementById('form-status');
+
+        try {
+            const response = await fetch('https://hooks.zapier.com/hooks/catch/17860884/23koh86/', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (response.ok) {
+              window.location.href = '/thank-you';
+            } else {
+                statusDiv.innerHTML = '<p>There was a problem with your submission. Please try again later.</p>';
+            }
+        } catch (error) {
+            statusDiv.innerHTML = '<p>There was a problem with your submission. Please try again later.</p>';
+        }
+    });
+</script>

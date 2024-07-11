@@ -1,5 +1,5 @@
 ---
-layout: 'base.html'
+layout: 'ad-base.html'
 description: 'Gutter Cleaning Cork, Your Gutters are cleared by the use of a ground based vacuum system to remove solid matter such as leaf residue and moss build up.'
 metaTitle: 'Gutter Cleaning Cork'
 tagTitle: 'Gutter Cleaning Cork'
@@ -51,8 +51,8 @@ permalink: 'gutter-cleaning-cork-special/'
                 <span class="cs-dot" aria-hidden="true"></span>
             </span>
             <div class="cs-flex">
-                <h3 class="cs-h3">MID SUMMER SPECIAL €30 OFF</h3>
-                <span class="cs-expires">*Offer Expires July 16th</span>
+                <h3 class="cs-h3">MID SUMMER SPECIAL 10% OFF</h3>
+                <span class="cs-expires">*Offer Expires July 26th</span>
                 <p class="cs-form-text">
                     Request a free* No-Obligation quote & book your cleaning today!
                 </p>
@@ -60,7 +60,11 @@ permalink: 'gutter-cleaning-cork-special/'
             <!--Form-->
             <form class="cs-form" id="cs-form-1467" name="Contact Form Cork" method="post" data-netlify="true">
                 <label class="cs-label">
-                    Name
+                    First Name
+                    <input class="cs-input" required type="text" id="name-1467" name="name">
+                </label>
+                <label class="cs-label">
+                    Last Name
                     <input class="cs-input" required type="text" id="name-1467" name="name">
                 </label>
                 <label class="cs-label">
@@ -71,6 +75,7 @@ permalink: 'gutter-cleaning-cork-special/'
                     Email
                     <input class="cs-input" required type="email" id="email-1467" name="email">
                 </label>
+                <!--
                 <label class="cs-label">
                     How many sides of Gutters need Cleaning?
                     <div class="check-boxes">
@@ -104,6 +109,7 @@ permalink: 'gutter-cleaning-cork-special/'
                         </div>
                     </div>
                 </label>
+                -->
                 <!--
                 <label class="cs-label">
                     Do you need Fascia and Soffit Cleaned?
@@ -126,17 +132,15 @@ permalink: 'gutter-cleaning-cork-special/'
                         </div>
                     </div>
                 </label>
-                -->
+                
                 <label class="cs-label cs-message">
                     Message
                     <textarea class="cs-input cs-textarea" required name="Message" id="message-1467"></textarea>
                 </label>
-                <button onclick="return gtag_report_conversion('type=submit')" class="cs-button-solid cs-submit" type="submit">Get Estimate</button>
+            -->
+                <button onclick="return gtag_report_conversion('type=submit')" class="cs-button-solid cs-submit" type="submit">Get Quote</button>
             </form>
-            <p class="cs-disclaimer">
-                <img class="cs-disclaimer-icon" decoding="async" fetchpriority="high" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/lock.svg" alt="icon" width="20" height="20">
-                *Free estimates for homeowners only. Commercial evaluations may be billable.
-            </p>
+        
         </div>
     </div>
 
@@ -148,6 +152,19 @@ permalink: 'gutter-cleaning-cork-special/'
     </picture>
 </section>                  
 
+<!-- ============================================ -->
+<!--                   Logos                      -->
+<!-- ============================================ -->
+
+<section id="logos-572">
+    <div class="cs-container">
+        <!--Ideally you want to use svg's for the file path image, which is why these aren't wrapped in picture elements for different screen sizes-->
+        <img class="cs-logo" src="/assets/images/Google-5-removebg-preview.png" alt="logo" width="287" height="65" loading="lazy" decoding="async">
+        <img class="cs-logo" src="/assets/images/skyvac-logo.webp" alt="logo" width="229" height="55" loading="lazy" decoding="async">
+        <img class="cs-logo" src="/assets/images/gpages-logo.png" alt="logo" width="235" height="33" loading="lazy" decoding="async">
+    </div>
+</section>
+                                
 <!-- ============================================ -->
 <!--                 Side By Side                 -->
 <!-- ============================================ -->
@@ -432,5 +449,29 @@ permalink: 'gutter-cleaning-cork-special/'
         </div>
     </div>
 </section>
-                                
+ 
+<script>
+    document.getElementById('cs-form-1467').addEventListener('submit', async function(event) {
+        event.preventDefault();
+
+        const form = event.target;
+        const formData = new FormData(form);
+        const statusDiv = document.getElementById('form-status');
+
+        try {
+            const response = await fetch('https://hooks.zapier.com/hooks/catch/17860884/23koh86/', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (response.ok) {
+              window.location.href = '/thank-you';
+            } else {
+                statusDiv.innerHTML = '<p>There was a problem with your submission. Please try again later.</p>';
+            }
+        } catch (error) {
+            statusDiv.innerHTML = '<p>There was a problem with your submission. Please try again later.</p>';
+        }
+    });
+</script>
                                 
