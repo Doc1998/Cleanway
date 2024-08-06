@@ -7,7 +7,7 @@
  
   #why-choose-682 {
     /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-    font-family: 'Roboto', 'Arial', sans-serif;
+    
     padding: var(--sectionPadding);
   }
   #why-choose-682 .cs-container {
@@ -378,7 +378,7 @@
     --sectionPadding: clamp(3.75em, 7.82vw, 6.25em) 1rem;
   }
   #sbs-r-370 {
-    font-family: 'Roboto', 'Arial', sans-serif;
+    
     padding: var(--sectionPadding);
     overflow: hidden;
   }
@@ -630,7 +630,7 @@
     --sectionPadding: clamp(3.75em, 7.82vw, 6.25em) 1rem;
   }
   #why-choose-375 {
-    font-family: 'Roboto', 'Arial', sans-serif;
+    
     padding: var(--sectionPadding);
     overflow: hidden;
   }
@@ -895,7 +895,7 @@
     --sectionPadding: clamp(3.75em, 7.82vw, 6.25em) 1rem;
   }
   #services-366 {
-    font-family: 'Roboto', 'Arial', sans-serif;
+    
     /* centers the button */
     text-align: center;
     padding: var(--sectionPadding);
@@ -1323,7 +1323,7 @@
   
   #steps-277 {
     /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-    font-family: 'Roboto', 'Arial', sans-serif;
+    
     padding: var(--sectionPadding);
   }
   #steps-277 .cs-container {
@@ -1557,7 +1557,7 @@
   }
   #gallery-406 {
     /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-    font-family: 'Roboto', 'Arial', sans-serif;
+    
     padding: var(--sectionPadding);
   }
   #gallery-406 .cs-container {
@@ -1736,7 +1736,7 @@
 
   #process-688 {
     /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-    font-family: 'Roboto', 'Arial', sans-serif;
+    
     padding: var(--sectionPadding);
     background-color: var(--primary);
     position: relative;
@@ -1876,7 +1876,7 @@
 @media only screen and (min-width: 0rem) {
   #hero-998 {
     /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-    font-family: 'Roboto', 'Arial', sans-serif;
+    
     min-height: 100vh;
     /* 144px - 280px */
     padding: clamp(9rem, 25.95vw, 17.5rem) 1rem;
@@ -2335,7 +2335,7 @@
   #RTsbsr-581,
   #RTsbst-581 {
     /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-    font-family: 'Roboto', 'Arial', sans-serif;
+    
   }
   #RTsbs-581 .cs-container,
   #RTsbsr-581 .cs-container,

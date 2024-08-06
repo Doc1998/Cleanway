@@ -45,7 +45,7 @@
   height: 25px!important;
 }
   #cs-contact {
-    font-family: 'Roboto', 'Arial', sans-serif;
+    
     padding: var(--sectionPadding);
   }
   #cs-contact .cs-container {
@@ -369,7 +369,7 @@
 @media only screen and (min-width: 0rem) {
   #cs-contact-486 {
     /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-    font-family: 'Roboto', 'Arial', sans-serif;
+    
     padding: var(--sectionPadding);
     position: relative;
     z-index: 1;
