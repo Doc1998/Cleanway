@@ -3,7 +3,7 @@ layout: 'base.html'
 description: 'The highest quality cleaning company. Based in Cork & Limerick we we provide commerical and residential cleaning services'
 metaTitle: 'Contact'
 tagTitle: 'Contact'
-preloadImg: '/images/cabinets2-1920w.webp'
+preloadImg: '/images/skyvac2.webp'
 preloadCSS: '/css/contact.css'
 permalink: 'contact/'
 eleventyNavigation:
@@ -19,125 +19,243 @@ eleventyNavigation:
 
 <section id="int-hero">
   <h1 id="home-h">Contact Us</h1>
-  {% image './src/images/cabinets2.jpg', 'cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+  {% image './src/assets/images/nice-house.webp', 'cleaning', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
 </section>
 
 <!-- ============================================ -->
 <!--                Contact Form                  -->
 <!-- ============================================ -->
 
-<section id="cs-contact">
+<section id="cs-contact-240">
   <div class="cs-container">
-    <form id="cs-form" name="Contact Form" method="post" data-netlify="true">
-      <div class="cs-content">
-        <span class="cs-topper">Contact</span>
-        <h2 class="cs-title">Get in Touch</h2>
-        <p class="cs-text">
-          Let us know the details of the cleaning you need completed. We will be in touch as soon as possible.
-                </p>
-      </div>
-      <label>
-                First Name
-                <input required type="text" id="name" name="first-name" placeholder="Name" class="top-label">
-      </label>
-      <label>
-        Last Name
-        <input required type="text" id="name" name="last-name" placeholder="last name" class="top-label">
-      </label>
-      <label>
-                Email
-                <input required type="text" id="email" name="email" placeholder="Email" class="top-label">
-      </label>
-      <label>
+      <div class="cs-left-section">
+          <div class="cs-content">
+              <span class="cs-topper">Contact</span>
+              <h2 class="cs-title">Make A Booking</h2>
+              <p class="cs-text">
+                Fill out the form below to make a booking!
+              </p>
+          </div>
+          <form id="cs-form-240" name="Contact Form" method="post">
+            <div class="info-line">
+              <label class="cs-label">
+              First Name
+              <input class="cs-input" required type="text" id="name-1467" name="first-name">
+              </label>
+              <label class="cs-label">
+                Last Name
+                <input class="cs-input" required type="text" id="name-1467" name="last-name">
+              </label>
+            </div>
+            <div class="info-line">
+              <label class="cs-label">
                 Phone
-                <input required type="text" id="phone" name="phone" placeholder="Phone" class="top-label">
-      </label>
-      <label>
-        Address
-        <input required type="text" id="Address" name="Address" placeholder="Address" class="top-label">
-      </label>
- 
-        Service(s) you are interested in
-        <div class="check-boxes">
-          <!--
-            <div class="check-box-top">
-                <div class="check-box-item">
-                    <label class="cs-label">
-                        Carpet Cleaning
+                <input class="cs-input" required type="tel" id="phone-1467" name="phone">
+            </label>
+            <label class="cs-label">
+                Email
+                <input class="cs-input" required type="email" id="email-1467" name="email">
+            </label>
+            </div>
+            <label class="cs-label-long">
+              What Services are you interested in? 
+            </label>
+                <div class="check-boxes">
+                    <div class="check-box-top">
+                        <div class="check-box-item">
+                            <label class="cs-label-small">
+                                Gutter Cleaning
+                            </label>
+                            <input class="check-box-btn" type="checkbox" id="hear-1467" name="gutter cleaning">
+                        </div>
+                        <div class="check-box-item">
+                            <label class="cs-label-small">
+                              Fascia & Soffit Cleaning
+                            </label>
+                            <input class="check-box-btn"  type="checkbox" id="hear-1467" name="fascia and soffit cleaning">
+                        </div>
+                    </div>
+                    <div class="check-box-bottom">
+                        <div class="check-box-item">
+                            <label class="cs-label-small">
+                              Power Washing 
+                            </label>
+                            <input class="check-box-btn"  type="checkbox" id="hear-1467" name="power washing">
+                        </div>
+                        <div class="check-box-item">
+                            <label class="cs-label-small">
+                                Window Cleaning
+                            </label>
+                            <input class="check-box-btn"  type="checkbox" id="hear-1467" name="window cleaning">
+                        </div>
+                     
+                    </div>
+                </div>
+                <label class="cs-label-long">
+                  How often would you like your windows cleaned?
+                </label>
+                    <div class="check-boxes">
+                        <div class="check-box-top">
+                            <div class="check-box-item">
+                                <label class="cs-label-small">
+                                    Every 6 Weeks
+                                </label>
+                                <input class="check-box-btn" type="checkbox" id="hear-1467" name="six weeks">
+                            </div>
+                            <div class="check-box-item">
+                                <label class="cs-label-small">
+                                  Every 12 Weeks
+                                </label>
+                                <input class="check-box-btn"  type="checkbox" id="hear-1467" name="twelve weeks">
+                            </div>
+                        </div>
+                    </div>
+          <label class="cs-label-long">
+            Property Type-Please indicate which options best describe your property:
+          </label>
+              <div class="check-boxes">
+                  <div class="check-box-top">
+                      <div class="check-box-item">
+                          <label class="cs-label-small">
+                              Terraced
+                          </label>
+                          <input class="check-box-btn" type="checkbox" id="hear-1467" name="terraced house">
+                      </div>
+                      <div class="check-box-item">
+                          <label class="cs-label-small">
+                            Semi Detached
+                          </label>
+                          <input class="check-box-btn"  type="checkbox" id="hear-1467" name="semi detached">
+                      </div>
+                      <div class="check-box-item">
+                          <label class="cs-label-small">
+                            Detached
+                          </label>
+                          <input class="check-box-btn"  type="checkbox" id="hear-1467" name="detached">
+                      </div>
+                      <div class="check-box-item">
+                        <label class="cs-label-small">
+                          Apartment
+                        </label>
+                        <input class="check-box-btn"  type="checkbox" id="hear-1467" name="apartment">
+                    </div>
+                    <div class="check-box-item">
+                      <label class="cs-label-small">
+                        Commercial
+                      </label>
+                      <input class="check-box-btn"  type="checkbox" id="hear-1467" name="commercial">
+                  </div>
+                  </div>
+              </div>
+              <label class="cs-label-long">
+                How many bedrooms is your property?
+              </label>
+              <div class="check-boxes">
+                <div class="check-box-top">
+                  <div class="check-box-item">
+                    <label class="cs-label-small">
+                      3 Bedroom
                     </label>
-                    <input class="check-box-btn"  type="checkbox" id="hear-1467" name="carpet-cleaning-checkbox">
+                    <input class="check-box-btn"  type="checkbox" id="hear-1467" name="3 bedroom">
                 </div>
                 <div class="check-box-item">
-                    <label class="cs-label">
-                        Window Cleaning
+                    <label class="cs-label-small">
+                        4 Bedroom
                     </label>
-                    <input class="check-box-btn" type="checkbox" id="hear-1467" name="window-cleaning-checkbox">
+                    <input class="check-box-btn"  type="checkbox" id="hear-1467" name="4 bedroom">
+                </div>
+                <div class="check-box-item">
+                    <label class="cs-label-small">
+                      5 Bedroom
+                    </label>
+                    <input class="check-box-btn"  type="checkbox" id="hear-1467" name="5 bedroom">
+                </div>
+                <div class="check-box-item">
+                  <label class="cs-label-small">
+                    6+ Bedroom
+                  </label>
+                  <input class="check-box-btn"  type="checkbox" id="hear-1467" name="6+ bedroom">
+              </div>
+              <div class="check-box-item">
+                <label class="cs-label-small">
+                  Commerical
+                </label>
+                <input class="check-box-btn"  type="checkbox" id="hear-1467" name="commercial">
+            </div>
                 </div>
             </div>
-            -->
-            <div class="check-box-bottom">
-              <!--
-                <div class="check-box-item">
-                    <label class="cs-label">
-                        Powerwash / Softwash
-                    </label>
-                    <input class="check-box-btn"  type="checkbox" id="hear-1467" name="powerwashing-checkbox">
-                </div>
-              -->
-                <div class="check-box-item">
-                    <label class="cs-label">
-                        Gutter Cleaning
-                    </label>
-                    <input class="check-box-btn"  type="checkbox" id="hear-1467" name="gutter-cleaning-checkbox">
-                </div>
-          
-            </div>
-        </div>
-
-      <label class="cs-label-message">
-                Details
-                <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
-      </label>
-      <button class="cs-button-solid" type="submit">Submit Message</button>
-    </form>
-    <div class="cs-right-section">
-      <!--Email-->
-      <span class="cs-header">Email</span>
-      <a class="cs-link" href="mailto:support@yourdomain.com">support@yourdomain.com</a>
-      <!--Phone-->
-      <span class="cs-header">Phone</span>
-      <a class="cs-link" href="tel:219-555-1234">(219) 555-1234</a>
-      <!--Address-->
-      <span class="cs-header">Address</span>
-      <a class="cs-link" href="">2553 Example Lane, <span class="cs-block">Some Street 120</span></a>
-
-      <!-- Background Image-->
-      {% image './src/images/skyscraper.jpg', 'building', '', 'lazy'%}
-    </div>
+          <label class="cs-label cs-message">
+              Additional Information 
+              <textarea class="cs-input cs-textarea" name="Message" id="message-1467"></textarea>
+          </label>
+              <button class="cs-button-solid cs-submit" type="submit">Submit Message Now</button>
+          </form>
+      </div>
+      <div class="cs-right-section">
+          <ul class="cs-ul">
+              <li class="cs-li">
+                  <picture class="cs-icon-wrapper">
+                      <img aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/mail.svg" alt="mail icon" class="cs-icon" width="36" height="36" decoding="async">
+                  </picture>
+                  <div class="cs-flex-group">
+                      <span class="cs-header">Email</span>
+                      <a href="mailto:info@cleanway.ie" class="cs-link">info@cleanway.ie</a>
+                  </div>
+              </li>
+              <li class="cs-li">
+                  <picture class="cs-icon-wrapper">
+                      <img aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/phone.svg" alt="phone icon" class="cs-icon" width="36" height="36" decoding="async">
+                  </picture>
+                  <div class="cs-flex-group">
+                      <span class="cs-header">Phone</span>
+                      <a href="tel:06369616" class="cs-link">(063) 69616</a>
+                  </div>
+              </li>
+              <li class="cs-li">
+                  <picture class="cs-icon-wrapper">
+                      <img aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin.svg" alt="address icon" class="cs-icon" width="36" height="36" decoding="async">
+                  </picture>
+                  <div class="cs-flex-group">
+                      <span class="cs-header">Address</span>
+                      <a href="" class="cs-link">Charleville,Cork - Covering Cork and Limerick</a>
+                  </div>
+              </li>
+          </ul>
+          <picture class="cs-picture">
+              <source media="(max-width: 600px)" srcset="/assets/images/skyvac2.webp">
+              <source media="(min-width: 601px)" srcset="/assets/images/skyvac2.webp">
+              <img class="cs-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/skyvac2.webp" alt="cleanway" width="462" height="438">
+          </picture>
+      </div>
   </div>
 </section>
+                              
 
   <script>
-      document.getElementById('cs-form').addEventListener('submit', async function(event) {
-          event.preventDefault();
+      document.getElementById('cs-form-240').addEventListener('submit', async function(event) {
+    // Remove the preventDefault call so that the form can submit normally to Netlify
+    // event.preventDefault();
 
-          const form = event.target;
-          const formData = new FormData(form);
-          const statusDiv = document.getElementById('form-status');
+    const form = event.target;
+    const formData = new FormData(form);
+    const statusDiv = document.getElementById('form-status');
 
-          try {
-              const response = await fetch('https://hooks.zapier.com/hooks/catch/17860884/23koh86/', {
-                  method: 'POST',
-                  body: formData
-              });
+    try {
+        // Send the form data to Zapier using fetch
+        const zapierResponse = await fetch('https://hooks.zapier.com/hooks/catch/17860884/23koh86/', {
+            method: 'POST',
+            body: formData
+        });
 
-              if (response.ok) {
-                window.location.href = '/thank-you';
-              } else {
-                  statusDiv.innerHTML = '<p>There was a problem with your submission. Please try again later.</p>';
-              }
-          } catch (error) {
-              statusDiv.innerHTML = '<p>There was a problem with your submission. Please try again later.</p>';
-          }
-      });
+        if (zapierResponse.ok) {
+            // Do not redirect immediately, let the form submission continue
+            // window.location.href = '/thank-you';
+            form.submit(); // Continue with the form submission to Netlify
+        } else {
+            statusDiv.innerHTML = '<p>There was a problem with your submission. Please try again later.</p>';
+        }
+    } catch (error) {
+        statusDiv.innerHTML = '<p>There was a problem with your submission. Please try again later.</p>';
+    }
+});
   </script>
