@@ -233,8 +233,7 @@ eleventyNavigation:
 
   <script>
       document.getElementById('cs-form-240').addEventListener('submit', async function(event) {
-    // Remove the preventDefault call so that the form can submit normally to Netlify
-    // event.preventDefault();
+    event.preventDefault(); // Prevent the default form submission
 
     const form = event.target;
     const formData = new FormData(form);
@@ -247,15 +246,42 @@ eleventyNavigation:
             body: formData
         });
 
+        // If the Zapier request was successful
         if (zapierResponse.ok) {
-            // Do not redirect immediately, let the form submission continue
-            // window.location.href = '/thank-you';
-            form.submit(); // Continue with the form submission to Netlify
+            // Create a hidden iframe to submit the form to Netlify
+            const iframe = document.createElement('iframe');
+            iframe.name = 'netlify-target';
+            iframe.style.display = 'none';
+            document.body.appendChild(iframe);
+
+            // Create a new form to submit the data to Netlify
+            const netlifyForm = document.createElement('form');
+            netlifyForm.action = form.action;
+            netlifyForm.method = form.method;
+            netlifyForm.target = iframe.name;
+            document.body.appendChild(netlifyForm);
+
+            // Append all form fields to the new form
+            formData.forEach((value, key) => {
+                const input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = key;
+                input.value = value;
+                netlifyForm.appendChild(input);
+            });
+
+            // Submit the form to Netlify
+            netlifyForm.submit();
+
+            // Redirect to the thank-you page after the Netlify form is submitted
+            iframe.onload = function() {
+                window.location.href = '/thank-you';
+            };
         } else {
-            statusDiv.innerHTML = '<p>There was a problem with your submission. Please try again later.</p>';
+            statusDiv.innerHTML = '<p>There was a problem with your submission to Zapier. Please try again later.</p>';
         }
     } catch (error) {
-        statusDiv.innerHTML = '<p>There was a problem with your submission. Please try again later.</p>';
+        statusDiv.innerHTML = '<p>There was a problem with your submission to Zapier. Please try again later.</p>';
     }
 });
-  </script>
+</script>
