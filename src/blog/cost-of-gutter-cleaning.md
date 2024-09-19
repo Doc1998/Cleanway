@@ -26,6 +26,12 @@ Another factor that can affect the cost of gutter cleaning is whether you need t
 
 Additionally, if you opt to have your gutters, fascia, or soffits washed down after the cleaning, this will increase the overall cost of the job. Cleaning these exterior surfaces improves the appearance of your home and helps prevent the buildup of dirt and grime, but it requires more time and effort, often leading to a higher price. Depending on the services you choose, these add-ons can significantly increase the final bill.
 
+<h2>Additional Info</h2>
+
+Gutters should be cleaned at least once a year to prevent clogs and water damage to your home. Regular maintenance ensures that rainwater flows properly and doesn't cause costly damage to your roof, walls, or foundation. If you're already planning to schedule a cleaning, refer your neighbours and ask for a discount. By referring your neighbors, you may get discounts on your services. It’s a win-win situation—your neighbors get a clean and safe home, and you enjoy reduced costs on future gutter cleanings!
+
+If you book multiple services, you can also save money on bundle deals.
+
 <h2>Looking to get your gutters cleaned?</h2>
 
 While it might be tempting to hire a local handyman with a ladder to save money, this approach can come with serious risks. Gutter cleaning can be hazardous, especially on multi-story homes, and someone could easily slip or fall, leaving you liable for any injuries on your property. Instead, it’s much safer and more efficient to hire professionals who use the latest equipment, like gutter vacuums, and are fully insured. At Cleanway, our <a href="/gutter-cleaning-cork">gutter cleaning services</a> are performed by experts ensuring a thorough and safe cleaning every time, protecting your home from water damage and saving you the hassle. Don’t wait— <a href="/contact">contact Cleanway today</a> for a reliable, professional gutter cleaning service that gives you peace of mind!
