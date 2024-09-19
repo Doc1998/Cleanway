@@ -18,10 +18,14 @@ The average cost of professional gutter cleaning typically sits <b>around €140
 
 Another key factor in determining the price is the length of the gutters. Larger homes with longer gutters will see higher costs due to the extra work involved. Additionally, homes with multiple stories may also see an increase in price, as accessing gutters at higher elevations requires more equipment and expertise. For large homes looking to clean multiple sides of clogged gutters, you could be looking at prices of €250-350 to get large jobs completed.
 
-<h2>Additional Costs<h2>
+<h2>Additional Costs</h2>
 
-Another factor that can affect the cost of gutter cleaning is whether you need the cleaner to dispose of the debris. If you don’t have bins or a way to handle the waste yourself, many professionals offer debris removal as an additional service, which may come with an extra charge. Additionally, if you opt to have your gutters, fascia, or soffits washed down after the cleaning, this will increase the overall cost of the job. Cleaning these exterior surfaces improves the appearance of your home and helps prevent the buildup of dirt and grime, but it requires more time and effort, often leading to a higher price. Depending on the services you choose, these add-ons can significantly increase the final bill.
+Another factor that can affect the cost of gutter cleaning is whether you need the cleaner to dispose of the debris. If you don’t have bins or a way to handle the waste yourself, many professionals offer debris removal as an additional service, which may come with an extra charge. 
 
-<h2>Looking to get your gutters cleaned?<h2>
+![barrel full of gutter debris](/assets/images/blog/dirt-barrel.jpeg "barrel full of gutter debris")
+
+Additionally, if you opt to have your gutters, fascia, or soffits washed down after the cleaning, this will increase the overall cost of the job. Cleaning these exterior surfaces improves the appearance of your home and helps prevent the buildup of dirt and grime, but it requires more time and effort, often leading to a higher price. Depending on the services you choose, these add-ons can significantly increase the final bill.
+
+<h2>Looking to get your gutters cleaned?</h2>
 
 While it might be tempting to hire a local handyman with a ladder to save money, this approach can come with serious risks. Gutter cleaning can be hazardous, especially on multi-story homes, and someone could easily slip or fall, leaving you liable for any injuries on your property. Instead, it’s much safer and more efficient to hire professionals who use the latest equipment, like gutter vacuums, and are fully insured. At Cleanway, our <a href="/gutter-cleaning-cork">gutter cleaning services</a> are performed by experts ensuring a thorough and safe cleaning every time, protecting your home from water damage and saving you the hassle. Don’t wait— <a href="/contact">contact Cleanway today</a> for a reliable, professional gutter cleaning service that gives you peace of mind!
