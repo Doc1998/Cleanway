@@ -244,6 +244,18 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
+  #review-wall{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  #review-wall .cs-picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+  }
     
     #sbsr-684 {
       /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
@@ -362,7 +374,7 @@
     #sbsr-684 .cs-picture img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: scale-down;
       position: absolute;
       top: 0;
       left: 0;
