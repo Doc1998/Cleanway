@@ -3796,7 +3796,45 @@
       justify-content: space-between;
   }
 }
-
+      /* Google Rating Banner */
+      .google-rating-banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+        padding: 1rem;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        gap: 0.5rem;
+        max-width: 300px; /* Adjust as needed */
+        margin: 0 auto; /* Center the banner */
+      }
+      
+      .google-rating-banner .stars {
+        display: flex;
+        gap: 0.25rem;
+      }
+      
+      .google-rating-banner .star-icon {
+        width: 16px;
+        height: 16px;
+      }
+      
+      .google-rating-banner .google-content {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      
+      .google-rating-banner img {
+        width: 80px; /* Adjust logo size */
+        height: auto;
+      }
+      
+      .google-rating-banner span {
+        font-size: 0.875rem;
+        color: #333;
+      }
                                                              
                                                              
                                 
