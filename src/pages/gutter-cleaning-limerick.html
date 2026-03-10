@@ -7,54 +7,1389 @@ preloadImg: '/images/gutter-vac.webp'
 preloadCSS: '/css/gutter-cleaning.css'
 permalink: 'gutter-cleaning-limerick/'
 ---
-<!-- Enter html code below -->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@400;500;600;700;800;900&display=swap');
 
- <!-- ============================================ -->
-<!--                    Hero                      -->
-<!-- ============================================ -->
+  /* ══════════════════════════════════════
+     DESIGN TOKENS
+  ══════════════════════════════════════ */
+  /* ══════════════════════════════════════
+     DESIGN TOKENS
+  ══════════════════════════════════════ */
+  :root {
+    --cw-primary: #1675F5;
+    --cw-primary-dark: #1260CC;
+    --cw-primary-deeper: #0B3D80;
+    --cw-primary-light: #3A8DF7;
+    --cw-accent: #ffd675;
+    --cw-accent-hover: #E8C05A;
+    --cw-hero-bg: #0B1A2E;
+    --cw-dark: #1a1a1a;
+    --cw-text: #4E4B66;
+    --cw-text-mid: #5C5A72;
+    --cw-text-light: #7C7A92;
+    --cw-bg: #F9FAFB;
+    --cw-bg-warm: #F0F4FA;
+    --cw-white: #FFFFFF;
+    --cw-border: #E2E4ED;
+    --cw-star: #FBBC04;
+    --cw-radius: 8px;
+    --cw-radius-lg: 12px;
+    --cw-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.05);
+    --cw-shadow-lg: 0 4px 6px rgba(0,0,0,0.05), 0 12px 40px rgba(0,0,0,0.1);
+    --cw-font-display: 'Outfit', sans-serif;
+    --cw-font-body: 'DM Sans', sans-serif;
+    --cw-max-width: 1200px;
+  }
 
-<section id="hero-331">
-    <div class="cs-container">
-        <div class="cs-flex-group">
-            <h1 class="cs-topper">Gutter Cleaning Limerick</h1>
-            <h2 class="cs-title"> The #1 <span class="cs-accent">Gutter Cleaning</span> Company in Limerick.</h2>
-            <p class="cs-text">
-                Gutters are cleared using a ground-based vacuum system designed to remove solid debris such as leaf residue and moss buildup.
-            </p>
-            <div class="cs-button-group">
-                <a href="/contact" class="cs-button-solid">Get Started</a>
-                <a href="tel:06369616" class="cs-button-transparent">
-                    <picture class="cs-picture">
-                        <img class="cs-img" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/chevron-right.svg" alt="icon" width="12" height="12" aria-hidden="true">
-                    </picture>
-                    06369616
-                </a>
-                <div class="google-rating-banner">
-                    <div class="stars">
-                        <img class="star-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/star-single.svg" alt="star">
-                        <img class="star-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/star-single.svg" alt="star">
-                        <img class="star-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/star-single.svg" alt="star">
-                        <img class="star-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/star-single.svg" alt="star">
-                        <img class="star-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/star-single.svg" alt="star">
-                    </div>
-                    <div class="google-content">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Logo">
-                        <span>Rated 4.9/5 based on 47+ reviews</span>
-                    </div>
-                </div>
-            </div>
+  /* ══════════════════════════════════════
+     RESET & GLOBAL
+  ══════════════════════════════════════ */
+  .cw-page *, .cw-page *::before, .cw-page *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  .cw-page { font-family: var(--cw-font-body); color: var(--cw-text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  .cw-page img { max-width: 100%; display: block; }
+  .cw-page a { text-decoration: none; color: inherit; }
+
+  .cw-container {
+    max-width: var(--cw-max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ══════════════════════════════════════
+     ANIMATIONS
+  ══════════════════════════════════════ */
+  @keyframes cwFadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes cwSlideInRight {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  @keyframes cwPulseGlow {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(240, 180, 41, 0.3); }
+    50% { box-shadow: 0 0 0 8px rgba(240, 180, 41, 0); }
+  }
+
+  .cw-animate-up { animation: cwFadeUp 0.7s ease-out both; }
+  .cw-animate-up-d1 { animation: cwFadeUp 0.7s 0.1s ease-out both; }
+  .cw-animate-up-d2 { animation: cwFadeUp 0.7s 0.2s ease-out both; }
+  .cw-animate-up-d3 { animation: cwFadeUp 0.7s 0.3s ease-out both; }
+  .cw-animate-up-d4 { animation: cwFadeUp 0.7s 0.4s ease-out both; }
+  .cw-animate-right { animation: cwSlideInRight 0.7s 0.3s ease-out both; }
+
+  /* ══════════════════════════════════════
+     SECTION: HERO
+  ══════════════════════════════════════ */
+  .cw-hero {
+    position: relative;
+    background: var(--cw-hero-bg);
+    overflow: hidden;
+    min-height: 620px;
+  }
+
+  .cw-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 15% 50%, rgba(14, 107, 63, 0.25) 0%, transparent 55%),
+      radial-gradient(ellipse at 85% 20%, rgba(240, 180, 41, 0.06) 0%, transparent 45%),
+      radial-gradient(ellipse at 50% 100%, rgba(14, 107, 63, 0.15) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .cw-hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.025' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .cw-hero-grid {
+    position: relative;
+    z-index: 2;
+    max-width: var(--cw-max-width);
+    margin: 0 auto;
+    padding: 56px 24px 64px;
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 48px;
+    align-items: center;
+    margin-top: 4em;
+  }
+
+  .cw-hero-content { color: var(--cw-white); }
+
+  .cw-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(14, 107, 63, 0.35);
+    border: 1px solid rgba(14, 107, 63, 0.5);
+    border-radius: 100px;
+    padding: 6px 16px;
+    font-family: var(--cw-font-body);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #A7F3D0;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 20px;
+  }
+
+  .cw-hero-badge svg { width: 14px; height: 14px; }
+
+  .cw-hero h1 {
+    font-family: var(--cw-font-display);
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--cw-white);
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+  }
+
+  .cw-hero h1 .cw-text-accent { color: var(--cw-accent); }
+
+  .cw-hero-sub {
+    font-size: 1.1rem;
+    line-height: 1.65;
+    color: rgba(255,255,255,0.78);
+    margin-bottom: 28px;
+    max-width: 520px;
+  }
+
+  .cw-hero-checks {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+
+  .cw-hero-checks li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--cw-font-display);
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.9);
+  }
+
+  .cw-check-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: rgba(14, 107, 63, 0.5);
+    flex-shrink: 0;
+  }
+
+  .cw-check-icon svg { width: 13px; height: 13px; color: #6EE7B7; }
+
+  .cw-hero-phone {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--cw-accent);
+    color: var(--cw-dark);
+    font-family: var(--cw-font-display);
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 14px 28px;
+    border-radius: var(--cw-radius);
+    transition: background 0.2s, transform 0.2s;
+    animation: cwPulseGlow 2.5s infinite;
+  }
+
+  .cw-hero-phone:hover { background: var(--cw-accent-hover); transform: translateY(-1px); }
+  .cw-hero-phone svg { width: 18px; height: 18px; }
+
+  /* Hero Google Banner */
+  .cw-hero-google-strip {
+    margin-top: 28px;
+  }
+
+  .cw-hero-google-inner {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(8px);
+    border-radius: 100px;
+    padding: 10px 24px;
+    width: fit-content;
+  }
+
+  .cw-google-logo {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    font-family: 'Product Sans', var(--cw-font-display), sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+
+  .cw-g-blue { color: #4285F4; }
+  .cw-g-red { color: #EA4335; }
+  .cw-g-yellow { color: #FBBC04; }
+  .cw-g-green { color: #34A853; }
+
+  .cw-stars-row { display: flex; gap: 2px; }
+  .cw-stars-row svg { width: 18px; height: 18px; color: var(--cw-star); fill: var(--cw-star); }
+
+  .cw-google-rating {
+    font-family: var(--cw-font-display);
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--cw-white);
+  }
+
+  .cw-google-count { font-size: 0.88rem; color: rgba(255,255,255,0.6); }
+
+  /* Hero Form */
+  .cw-hero-form-card {
+    background: var(--cw-white);
+    border-radius: var(--cw-radius-lg);
+    padding: 32px 28px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.25), 0 0 0 1px rgba(255,255,255,0.08);
+  }
+
+  .cw-hero-form-card h2 {
+    font-family: var(--cw-font-display);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--cw-dark);
+    text-align: center;
+    margin-bottom: 4px;
+  }
+
+  .cw-form-subtitle {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--cw-text-light);
+    margin-bottom: 20px;
+  }
+
+  .cw-form-group { margin-bottom: 14px; }
+
+  .cw-form-group label {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--cw-text-mid);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 5px;
+  }
+
+  .cw-form-group label .cw-required { color: #DC2626; }
+
+  .cw-form-group input,
+  .cw-form-group select,
+  .cw-form-group textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1.5px solid var(--cw-border);
+    border-radius: 6px;
+    font-family: var(--cw-font-body);
+    font-size: 0.92rem;
+    color: var(--cw-text);
+    background: var(--cw-white);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+    -webkit-appearance: none;
+  }
+
+  .cw-form-group input:focus,
+  .cw-form-group select:focus,
+  .cw-form-group textarea:focus {
+    border-color: var(--cw-primary);
+    box-shadow: 0 0 0 3px rgba(14, 107, 63, 0.12);
+  }
+
+  .cw-form-group select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%236B7280' viewBox='0 0 16 16'%3E%3Cpath d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 36px;
+  }
+
+  .cw-form-submit {
+    width: 100%;
+    padding: 14px;
+    background: var(--cw-primary);
+    color: var(--cw-white);
+    border: none;
+    border-radius: 6px;
+    font-family: var(--cw-font-display);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    transition: background 0.2s, transform 0.15s;
+    margin-top: 4px;
+  }
+
+  .cw-form-submit:hover { background: var(--cw-primary-dark); transform: translateY(-1px); }
+
+  .cw-form-note {
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--cw-text-light);
+    margin-top: 10px;
+  }
+
+  /* ══════════════════════════════════════
+     SECTION: TRUST STRIP
+  ══════════════════════════════════════ */
+  .cw-trust-strip {
+    background: var(--cw-white);
+    border-bottom: 1px solid var(--cw-border);
+  }
+
+  .cw-trust-strip-inner {
+    max-width: var(--cw-max-width);
+    margin: 0 auto;
+    padding: 20px 24px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+  }
+
+  .cw-trust-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px 16px;
+    position: relative;
+  }
+
+  .cw-trust-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 20%;
+    height: 60%;
+    width: 1px;
+    background: var(--cw-border);
+  }
+
+  .cw-trust-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: var(--cw-bg-warm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .cw-trust-icon svg { width: 20px; height: 20px; color: var(--cw-primary); }
+
+  .cw-trust-text strong {
+    display: block;
+    font-family: var(--cw-font-display);
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--cw-dark);
+  }
+
+  .cw-trust-text span { font-size: 0.8rem; color: var(--cw-text-light); }
+
+  /* ══════════════════════════════════════
+     SECTION: SERVICES
+  ══════════════════════════════════════ */
+  .cw-services {
+    padding: 80px 0;
+    background: var(--cw-bg);
+  }
+
+  .cw-section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--cw-font-display);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--cw-primary);
+    margin-bottom: 12px;
+  }
+
+  .cw-section-label::before {
+    content: '';
+    width: 28px;
+    height: 2px;
+    background: var(--cw-primary);
+    border-radius: 2px;
+  }
+
+  .cw-section-title {
+    font-family: var(--cw-font-display);
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--cw-dark);
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+
+  .cw-section-desc {
+    font-size: 1.05rem;
+    color: var(--cw-text-mid);
+    max-width: 640px;
+    margin-bottom: 48px;
+    line-height: 1.7;
+  }
+
+  .cw-services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .cw-service-card {
+    background: var(--cw-white);
+    border-radius: var(--cw-radius-lg);
+    padding: 36px 32px;
+    border: 1px solid var(--cw-border);
+    transition: box-shadow 0.3s, transform 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cw-service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--cw-primary), var(--cw-primary-light));
+    border-radius: var(--cw-radius-lg) var(--cw-radius-lg) 0 0;
+  }
+
+  .cw-service-card:hover {
+    box-shadow: var(--cw-shadow-lg);
+    transform: translateY(-3px);
+  }
+
+  .cw-service-icon-wrap {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--cw-primary) 0%, var(--cw-primary-light) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .cw-service-icon-wrap svg { width: 24px; height: 24px; color: var(--cw-white); }
+
+  .cw-service-card h3 {
+    font-family: var(--cw-font-display);
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--cw-dark);
+    margin-bottom: 12px;
+  }
+
+  .cw-service-card > p {
+    color: var(--cw-text-mid);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 18px;
+  }
+
+  .cw-service-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  .cw-service-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: var(--cw-text);
+    line-height: 1.5;
+  }
+
+  .cw-service-list li svg {
+    width: 16px;
+    height: 16px;
+    color: var(--cw-primary);
+    flex-shrink: 0;
+    margin-top: 3px;
+  }
+
+  .cw-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--cw-primary);
+    color: var(--cw-white);
+    font-family: var(--cw-font-display);
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+  }
+
+  .cw-btn-primary:hover { background: var(--cw-primary-dark); transform: translateY(-1px); }
+  .cw-btn-primary svg { width: 16px; height: 16px; }
+
+  /* ══════════════════════════════════════
+     SECTION: WHY CHOOSE US
+  ══════════════════════════════════════ */
+  .cw-why {
+    padding: 80px 0;
+    background: var(--cw-white);
+  }
+
+  .cw-why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+  }
+
+  .cw-why-card {
+    padding: 28px 24px;
+    background: var(--cw-bg-warm);
+    border-radius: var(--cw-radius-lg);
+    border: 1px solid transparent;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    text-align: center;
+  }
+
+  .cw-why-card:hover { border-color: var(--cw-primary); box-shadow: var(--cw-shadow); }
+
+  .cw-why-card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--cw-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    box-shadow: 0 2px 8px rgba(14, 107, 63, 0.1);
+  }
+
+  .cw-why-card-icon svg { width: 22px; height: 22px; color: var(--cw-primary); }
+
+  .cw-why-card h3 {
+    font-family: var(--cw-font-display);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--cw-dark);
+    margin-bottom: 8px;
+  }
+
+  .cw-why-card p { font-size: 0.88rem; color: var(--cw-text-mid); line-height: 1.6; }
+
+  /* ══════════════════════════════════════
+     SECTION: PROCESS
+  ══════════════════════════════════════ */
+  .cw-process {
+    padding: 80px 0;
+    background: var(--cw-hero-bg);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cw-process::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 0%, rgba(14,107,63,0.2) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .cw-process .cw-section-label { color: #6EE7B7; }
+  .cw-process .cw-section-label::before { background: #6EE7B7; }
+  .cw-process .cw-section-title { color: var(--cw-white); }
+  .cw-process .cw-section-desc { color: rgba(255,255,255,0.65); }
+
+  .cw-process-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .cw-process-step { text-align: center; padding: 32px 20px; }
+
+  .cw-step-number {
+    font-family: var(--cw-font-display);
+    font-size: 3rem;
+    font-weight: 900;
+    color: rgba(14, 107, 63, 0.35);
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+
+  .cw-step-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(14, 107, 63, 0.25);
+    border: 1px solid rgba(110, 231, 183, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+  }
+
+  .cw-step-icon svg { width: 24px; height: 24px; color: #6EE7B7; }
+
+  .cw-process-step h3 {
+    font-family: var(--cw-font-display);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--cw-white);
+    margin-bottom: 8px;
+  }
+
+  .cw-process-step p { font-size: 0.88rem; color: rgba(255,255,255,0.55); line-height: 1.6; }
+
+  /* ══════════════════════════════════════
+     SECTION: SERVICE AREA
+  ══════════════════════════════════════ */
+  .cw-area {
+    padding: 80px 0;
+    background: var(--cw-bg);
+  }
+
+  .cw-area-content { max-width: 780px; }
+
+  .cw-area-content p {
+    font-size: 1rem;
+    color: var(--cw-text-mid);
+    line-height: 1.75;
+    margin-bottom: 16px;
+  }
+
+  .cw-area-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
+  }
+
+  .cw-area-tag {
+    padding: 6px 16px;
+    background: var(--cw-white);
+    border: 1px solid var(--cw-border);
+    border-radius: 100px;
+    font-size: 0.85rem;
+    color: var(--cw-text);
+    font-weight: 500;
+    transition: border-color 0.2s, background 0.2s;
+  }
+
+  .cw-area-tag:hover { border-color: var(--cw-primary); background: rgba(14, 107, 63, 0.04); }
+
+  /* ══════════════════════════════════════
+     SECTION: FAQ
+  ══════════════════════════════════════ */
+  .cw-faq {
+    padding: 80px 0;
+    background: var(--cw-white);
+  }
+
+  .cw-faq-list {
+    max-width: 780px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cw-faq-item { border-bottom: 1px solid var(--cw-border); }
+
+  .cw-faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 20px 40px 20px 0;
+    font-family: var(--cw-font-display);
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--cw-dark);
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.2s;
+  }
+
+  .cw-faq-question:hover { color: var(--cw-primary); }
+
+  .cw-faq-question::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--cw-primary);
+    transition: transform 0.3s;
+  }
+
+  .cw-faq-item.active .cw-faq-question::after { content: '\2212'; }
+
+  .cw-faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+  }
+
+  .cw-faq-item.active .cw-faq-answer {
+    max-height: 300px;
+    padding-bottom: 20px;
+  }
+
+  .cw-faq-answer p { font-size: 0.95rem; color: var(--cw-text-mid); line-height: 1.7; }
+
+  /* ══════════════════════════════════════
+     SECTION: FINAL CTA
+  ══════════════════════════════════════ */
+  .cw-final-cta {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--cw-primary-deeper) 0%, var(--cw-primary-dark) 40%, var(--cw-primary) 100%);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cw-final-cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(240,180,41,0.08) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .cw-final-cta-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .cw-final-cta h2 {
+    font-family: var(--cw-font-display);
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--cw-white);
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  .cw-final-cta p {
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 32px;
+    line-height: 1.7;
+  }
+
+  .cw-btn-accent {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--cw-accent);
+    color: var(--cw-dark);
+    font-family: var(--cw-font-display);
+    font-size: 1.05rem;
+    font-weight: 700;
+    padding: 16px 36px;
+    border-radius: var(--cw-radius);
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    transition: background 0.2s, transform 0.15s;
+  }
+
+  .cw-btn-accent:hover { background: var(--cw-accent-hover); transform: translateY(-2px); }
+  .cw-btn-accent svg { width: 18px; height: 18px; }
+
+  .cw-final-phone { margin-top: 18px; font-size: 0.95rem; color: rgba(255,255,255,0.55); }
+  .cw-final-phone a { color: var(--cw-accent); font-weight: 600; transition: color 0.2s; }
+  .cw-final-phone a:hover { color: var(--cw-white); }
+
+  /* ══════════════════════════════════════
+     SECTION: HIGH REACH VACUUM DETAIL
+  ══════════════════════════════════════ */
+  .cw-vacuum {
+    padding: 80px 0;
+    background: var(--cw-white);
+  }
+
+  .cw-vacuum-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    align-items: start;
+    margin-top: 40px;
+  }
+
+  .cw-vacuum-content h3 {
+    font-family: var(--cw-font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--cw-dark);
+    margin-bottom: 16px;
+  }
+
+  .cw-vacuum-content p {
+    font-size: 0.95rem;
+    color: var(--cw-text-mid);
+    line-height: 1.75;
+    margin-bottom: 16px;
+  }
+
+  .cw-vacuum-content p strong {
+    color: var(--cw-text);
+    font-weight: 600;
+  }
+
+  .cw-vacuum-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 24px;
+    margin-bottom: 28px;
+  }
+
+  .cw-vacuum-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    font-size: 0.92rem;
+    color: var(--cw-text);
+    line-height: 1.55;
+  }
+
+  .cw-vf-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: var(--cw-bg-warm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .cw-vf-icon svg { width: 18px; height: 18px; color: var(--cw-primary); }
+
+  .cw-vf-text strong {
+    display: block;
+    font-family: var(--cw-font-display);
+    font-weight: 600;
+    color: var(--cw-dark);
+    margin-bottom: 2px;
+    font-size: 0.92rem;
+  }
+
+  .cw-vf-text span {
+    font-size: 0.85rem;
+    color: var(--cw-text-mid);
+  }
+
+  .cw-vacuum-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cw-vs-card {
+    background: var(--cw-bg-warm);
+    border-radius: var(--cw-radius-lg);
+    padding: 28px 24px;
+    border-left: 4px solid var(--cw-primary);
+  }
+
+  .cw-vs-card h4 {
+    font-family: var(--cw-font-display);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--cw-dark);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .cw-vs-card h4 svg { width: 18px; height: 18px; color: var(--cw-primary); }
+
+  .cw-vs-card p {
+    font-size: 0.88rem;
+    color: var(--cw-text-mid);
+    line-height: 1.65;
+  }
+
+  .cw-vs-card.cw-vs-highlight {
+    background: linear-gradient(135deg, var(--cw-primary) 0%, var(--cw-primary-light) 100%);
+    border-left: none;
+  }
+
+  .cw-vs-card.cw-vs-highlight h4 { color: var(--cw-white); }
+  .cw-vs-card.cw-vs-highlight h4 svg { color: var(--cw-accent); }
+  .cw-vs-card.cw-vs-highlight p { color: rgba(255,255,255,0.82); }
+
+  /* ══════════════════════════════════════
+     SECTION: PROBLEMS / SIGNS
+  ══════════════════════════════════════ */
+  .cw-problems {
+    padding: 80px 0;
+    background: var(--cw-bg);
+  }
+
+  .cw-problems-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+  }
+
+  .cw-problem-card {
+    display: flex;
+    gap: 18px;
+    padding: 24px;
+    background: var(--cw-white);
+    border-radius: var(--cw-radius-lg);
+    border: 1px solid var(--cw-border);
+    transition: box-shadow 0.3s;
+  }
+
+  .cw-problem-card:hover { box-shadow: var(--cw-shadow); }
+
+  .cw-problem-num {
+    font-family: var(--cw-font-display);
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgba(14, 107, 63, 0.15);
+    line-height: 1;
+    flex-shrink: 0;
+    width: 40px;
+  }
+
+  .cw-problem-card h4 {
+    font-family: var(--cw-font-display);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--cw-dark);
+    margin-bottom: 6px;
+  }
+
+  .cw-problem-card p {
+    font-size: 0.88rem;
+    color: var(--cw-text-mid);
+    line-height: 1.6;
+  }
+
+  .cw-problems-cta {
+    margin-top: 40px;
+    padding: 28px 32px;
+    background: var(--cw-white);
+    border: 2px solid var(--cw-primary);
+    border-radius: var(--cw-radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .cw-problems-cta p {
+    font-size: 1.05rem;
+    color: var(--cw-dark);
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  .cw-problems-cta p strong {
+    font-family: var(--cw-font-display);
+    font-weight: 700;
+  }
+
+  /* ══════════════════════════════════════
+     SECTION: STATS STRIP
+  ══════════════════════════════════════ */
+  .cw-stats {
+    padding: 56px 0;
+    background: var(--cw-primary);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cw-stats::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 50%, rgba(255,255,255,0.06) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  .cw-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .cw-stat { text-align: center; }
+
+  .cw-stat-number {
+    font-family: var(--cw-font-display);
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: var(--cw-white);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .cw-stat-number span { color: var(--cw-accent); }
+
+  .cw-stat-label {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.7);
+    font-weight: 500;
+  }
+
+  /* ══════════════════════════════════════
+     SECTION: DETAILED CONTENT
+  ══════════════════════════════════════ */
+  .cw-detail {
+    padding: 80px 0;
+    background: var(--cw-white);
+  }
+
+  .cw-detail-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 56px;
+    margin-top: 40px;
+  }
+
+  .cw-detail-prose p {
+    font-size: 0.98rem;
+    color: var(--cw-text-mid);
+    line-height: 1.8;
+    margin-bottom: 18px;
+  }
+
+  .cw-detail-prose h3 {
+    font-family: var(--cw-font-display);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--cw-dark);
+    margin-top: 32px;
+    margin-bottom: 12px;
+  }
+
+  .cw-detail-prose h3:first-child { margin-top: 0; }
+
+  .cw-detail-aside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: sticky;
+    top: 24px;
+  }
+
+  .cw-aside-card {
+    background: var(--cw-bg-warm);
+    border-radius: var(--cw-radius-lg);
+    padding: 24px 20px;
+  }
+
+  .cw-aside-card h4 {
+    font-family: var(--cw-font-display);
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--cw-dark);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .cw-aside-card h4 svg { width: 18px; height: 18px; color: var(--cw-primary); }
+
+  .cw-aside-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .cw-aside-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: var(--cw-text-mid);
+    line-height: 1.5;
+  }
+
+  .cw-aside-list li svg {
+    width: 14px;
+    height: 14px;
+    color: var(--cw-primary);
+    flex-shrink: 0;
+    margin-top: 3px;
+  }
+
+  .cw-aside-cta {
+    background: linear-gradient(135deg, var(--cw-primary-deeper) 0%, var(--cw-primary) 100%);
+    border-radius: var(--cw-radius-lg);
+    padding: 28px 20px;
+    text-align: center;
+  }
+
+  .cw-aside-cta h4 {
+    font-family: var(--cw-font-display);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--cw-white);
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+
+  .cw-aside-cta h4 svg { color: var(--cw-accent); }
+
+  .cw-aside-cta p {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 16px;
+    line-height: 1.6;
+  }
+
+  .cw-aside-cta .cw-btn-accent {
+    font-size: 0.9rem;
+    padding: 12px 24px;
+  }
+
+  /* ══════════════════════════════════════
+     RESPONSIVE
+  ══════════════════════════════════════ */
+  @media (max-width: 1024px) {
+    .cw-hero-grid { grid-template-columns: 1fr; gap: 36px; padding: 40px 24px 48px; }
+    .cw-hero h1 { font-size: 2.4rem; }
+    .cw-hero-form-card { max-width: 480px; }
+    .cw-services-grid { grid-template-columns: 1fr; }
+    .cw-why-grid { grid-template-columns: repeat(2, 1fr); }
+    .cw-process-steps { grid-template-columns: repeat(2, 1fr); }
+    .cw-vacuum-grid { grid-template-columns: 1fr; }
+    .cw-detail-grid { grid-template-columns: 1fr; }
+    .cw-detail-aside { position: static; }
+    .cw-stats-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 768px) {
+    .cw-hero h1 { font-size: 2rem; }
+    .cw-trust-strip-inner { grid-template-columns: repeat(2, 1fr); }
+    .cw-trust-item:nth-child(2)::after { display: none; }
+    .cw-trust-item { padding: 10px 12px; }
+    .cw-section-title { font-size: 1.75rem; }
+    .cw-why-grid { grid-template-columns: 1fr; }
+    .cw-process-steps { grid-template-columns: 1fr 1fr; }
+    .cw-final-cta h2 { font-size: 1.8rem; }
+    .cw-problems-grid { grid-template-columns: 1fr; }
+    .cw-problems-cta { flex-direction: column; text-align: center; }
+  }
+
+  @media (max-width: 480px) {
+    .cw-hero h1 { font-size: 1.7rem; }
+    .cw-hero-grid { padding: 32px 16px 40px; }
+    .cw-hero-form-card { padding: 24px 20px; }
+    .cw-trust-strip-inner { grid-template-columns: 1fr; }
+    .cw-trust-item::after { display: none !important; }
+    .cw-process-steps { grid-template-columns: 1fr; }
+    .cw-area-tags { gap: 8px; }
+    .cw-stats-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
+    .cw-stat-number { font-size: 2.2rem; }
+  }
+</style>
+
+<div class="cw-page">
+
+  <!-- ═══════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════ -->
+  <section class="cw-hero" id="hero">
+    <div class="cw-hero-grid">
+
+      <div class="cw-hero-content">
+        <div class="cw-hero-badge cw-animate-up">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Limerick's Trusted Gutter Specialists
         </div>
+
+        <h1 class="cw-animate-up-d1">
+          Professional <span class="cw-text-accent">Gutter Cleaning</span> in Limerick
+        </h1>
+
+        <p class="cw-hero-sub cw-animate-up-d2">
+          Keep your home protected with expert gutter, fascia &amp; soffit cleaning across Limerick city and county. Fully insured, locally owned, and trusted by your neighbours.
+        </p>
+
+        <ul class="cw-hero-checks cw-animate-up-d3">
+          <li>
+            <span class="cw-check-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            50+ Five-Star Google Reviews
+          </li>
+          <li>
+            <span class="cw-check-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Fully Insured &amp; Professional Team
+          </li>
+          <li>
+            <span class="cw-check-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Gutter, Fascia &amp; Soffit Cleaning
+          </li>
+          <li>
+            <span class="cw-check-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Serving All of Limerick City &amp; County
+          </li>
+        </ul>
+
+        <a href="tel:+3536369616" class="cw-hero-phone cw-animate-up-d4">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call Us Now
+        </a>
+
+        <div class="cw-hero-google-strip">
+          <div class="cw-hero-google-inner">
+            <span class="cw-google-logo" aria-hidden="true">
+              <span class="cw-g-blue">G</span><span class="cw-g-red">o</span><span class="cw-g-yellow">o</span><span class="cw-g-blue">g</span><span class="cw-g-green">l</span><span class="cw-g-red">e</span>
+            </span>
+            <span class="cw-stars-row" aria-label="5 out of 5 stars">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </span>
+            <span class="cw-google-rating">5.0</span>
+            <span class="cw-google-count">(50+ reviews)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cw-hero-form-card cw-animate-right">
+        <h2>Get a Free Quote</h2>
+        <p class="cw-form-subtitle">Fast response &bull; No obligation</p>
+
+        <form action="/thank-you/" method="POST" id="hero-quote-form">
+          <div class="cw-form-group">
+            <label for="cw-name">First Name <span class="cw-required">*</span></label>
+            <input type="text" id="cw-name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="cw-form-group">
+            <label for="cw-name">Last Name <span class="cw-required">*</span></label>
+            <input type="text" id="cw-name" name="last-name" placeholder="Your name" required>
+          </div>
+          <div class="cw-form-group">
+            <label for="cw-phone">Phone <span class="cw-required">*</span></label>
+            <input type="tel" id="cw-phone" name="phone" placeholder="Your phone number" required>
+          </div>
+          <div class="cw-form-group">
+            <label for="cw-email">Email <span class="cw-required">*</span></label>
+            <input type="email" id="cw-email" name="email" placeholder="Your email address" required>
+          </div>
+          <div class="cw-form-group">
+            <label for="cw-address">Address / Eircode</label>
+            <input type="text" id="cw-address" name="address" placeholder="Your address or Eircode">
+          </div>
+          <div class="cw-form-group">
+            <label for="cw-service">Service Required <span class="cw-required">*</span></label>
+            <select id="cw-service" name="service" required>
+              <option value="" disabled selected>Select a service</option>
+              <option value="gutter-cleaning">Gutter Cleaning</option>
+              <option value="fascia-soffit-cleaning">Fascia &amp; Soffit Cleaning</option>
+              <option value="both">Gutter, Fascia &amp; Soffit Cleaning</option>
+              <option value="other">Other / Not Sure</option>
+            </select>
+          </div>
+          <button type="submit" class="cw-form-submit">Get a Free Quote</button>
+          <p class="cw-form-note">We typically respond within 10 mins</p>
+        </form>
+      </div>
+
     </div>
-
-    <!-- Background Image -->
-    <picture class="cs-background">
-        <source media="(max-width: 600px)" srcset="/assets/images/sean-working.jpeg">
-        <source media="(min-width: 601px)" srcset="/assets/images/sean-working.jpeg">
-        <img decoding="async" src="/assets/images/sean-working.jpeg" alt="gutter cleaner in Limerick" width="2250" height="1500" aria-hidden="true">
-    </picture>
-</section>   
+  </section>
 
 
+  <!-- ═══════════════════════════════════
+       TRUST STRIP
+  ═══════════════════════════════════ -->
+  <section class="cw-trust-strip" aria-label="Trust signals">
+    <div class="cw-trust-strip-inner">
+      <div class="cw-trust-item">
+        <div class="cw-trust-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <div class="cw-trust-text">
+          <strong>50+ Google Reviews</strong>
+          <span>Rated 5 Stars</span>
+        </div>
+      </div>
+      <div class="cw-trust-item">
+        <div class="cw-trust-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="cw-trust-text">
+          <strong>Fully Insured</strong>
+          <span>Complete Peace of Mind</span>
+        </div>
+      </div>
+      <div class="cw-trust-item">
+        <div class="cw-trust-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div class="cw-trust-text">
+          <strong>Local Limerick Team</strong>
+          <span>City &amp; County Coverage</span>
+        </div>
+      </div>
+      <div class="cw-trust-item">
+        <div class="cw-trust-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="cw-trust-text">
+          <strong>Fast Response</strong>
+          <span>Response Within 10 mins</span>
+        </div>
+      </div>
+    </div>
+  </section>
 <section style="padding:40px 20px;background-color:#f5f5f5;">
   <div style="max-width:1200px;margin:0 auto;text-align:center;">
     <h2 style="font-size:32px;margin-bottom:10px;color:#333;">Exterior Cleaning Jobs using Gutter Vacuum</h2>
@@ -76,155 +1411,382 @@ permalink: 'gutter-cleaning-limerick/'
 </section>
 <script src="https://player.vimeo.com/api/player.js"></script>
 
-<!-- ============================================ -->
-<!--                 Side By Side                 -->
-<!-- ============================================ -->
+  <!-- ═══════════════════════════════════
+       SERVICES SECTION
+  ═══════════════════════════════════ -->
+  <section class="cw-services" id="services">
+    <div class="cw-container">
+      <div class="cw-section-label">Our Services</div>
+      <h2 class="cw-section-title">Professional Gutter &amp; Exterior Cleaning in Limerick</h2>
+      <p class="cw-section-desc">From blocked gutters to stained fascia boards, Cleanway delivers a thorough, professional clean that protects your property and restores its appearance.</p>
 
-<section id="RTsbs-581">
-    <div class="cs-container">
-        <picture class="cs-picture">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="/assets/images/gutter-vac.webp">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" srcset="/assets/images/gutter-vac.webp">
-            <img loading="lazy" decoding="async" src="/assets/images/gutter-vac.webp" alt="gutters" >
-        </picture>
-        <div class="cs-content">
-            <span class="cs-topper">What We Do</span>
-            <h2 class="cs-title">Safe & Effective Gutter Cleaning</h2>
-            <p class="cs-text">
-                <b>Visual Inspection:</b><br>
-                We begin with a ground-level visual inspection to look for obvious signs of debris buildup, such as leaves, twigs, and moss.<br>
-            </p>
-            <p class="cs-text">
-                <b>Camera Inspection:</b><br> 
-            For a more detailed assessment, we sometimes use a high pole equipped with a high-resolution camera. This allows us to get a close-up view of the gutters, especially in hard-to-reach areas. The camera can capture images and videos, helping to identify blockages, damage, or areas where debris is accumulating. This method is particularly useful for tall buildings or locations where ladder access is difficult and enhances safety by reducing the need for climbing.<br>
-            </p>
-            <p class="cs-text">
-                <b>Cleaning the Gutter:</b><br>
-                The gutter vacuum system is designed to be operated from the ground, eliminating the need for ladders and reducing the risk of falls. It consists of a powerful vacuum connected to extendable poles that can reach the gutters from below.<br>
-                The vacuum is capable of removing various types of debris, including leaves, twigs, moss, and other solid matter that might clog the gutters. The strong suction power ensures that even compacted debris is effectively cleared out.
-            </p>
-            <a href="/contact" class="cs-button-solid">GET A GUTTER CLEANING QUOTE</a>
+      <div class="cw-services-grid">
+
+        <div class="cw-service-card">
+          <div class="cw-service-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>Gutter Cleaning Limerick</h3>
+          <p>Blocked gutters cause water damage, damp walls, and costly repairs. Our gutter cleaning service in Limerick uses a powerful high reach vacuum system to remove all debris, leaves, moss, and build-up — keeping water flowing freely and your home protected year-round. Unlike traditional methods, our high reach gutter vacuum allows us to clean gutters safely from the ground, reducing risk and delivering a more thorough result.</p>
+          <ul class="cw-service-list">
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>High reach vacuum gutter cleaning from ground level</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Full debris, leaf, and moss removal</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Downpipe flushing and flow testing</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>High reach camera for gutter inspection</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Before and after photos provided</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Single and two-storey, and three-storey houses — no scaffolding needed</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Prevents damp, leaks, and structural damage</li>
+          </ul>
+          <a href="#hero" class="cw-btn-primary" style="color: white;">Get a Quote <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
         </div>
-    </div>
-</section>
 
-<section id="review-wall">
-    <picture class="cs-picture">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="/assets/images/review-wall.png">
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="/assets/images/review-wall.png">
-        <img loading="lazy" decoding="async" src="/assets/images/review-wall.png" alt="window cleaning">
-    </picture>
-</section>
-    <!-- ============================================ -->
-<!--                  Gallery                     -->
-<!-- ============================================ -->
-
-   <!-- ============================================ -->
-<!--                  Gallery                     -->
-<!-- ============================================ -->
-
-<section id="gallery-1716">
-    <div class="cs-container">
-        <div class="cs-gallery">
-            <picture class="cs-picture">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)"
-                        srcset="/assets/images/before-after-gutter (1).png">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)"
-                        srcset="/assets/images/before-after-gutter (1).png">
-                <img loading="lazy" decoding="async"
-                        src="/assets/images/before-after-gutter (1).png" alt="gutter cleaning before after"
-                        width="480" height="549">
-            </picture>
+        <div class="cw-service-card">
+          <div class="cw-service-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+          </div>
+          <h3>Fascia &amp; Soffit Cleaning Limerick</h3>
+          <p>Dirty, stained fascia and soffits make your entire property look neglected. Our professional fascia and soffit cleaning in Limerick restores the exterior of your home, removing black marks, algae, and weathering with specialist equipment.</p>
+          <ul class="cw-service-list">
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Removes black streaks, algae, and grime</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Restores uPVC, wood, and aluminium finishes</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Safe, reach-and-wash system for all heights</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Instantly improves kerb appeal</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Often combined with gutter cleaning for best value</li>
+          </ul>
+          <a href="#hero" class="cw-btn-primary" style="color: white;">Get a Quote <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
         </div>
+
+      </div>
     </div>
-</section>
-<section id="review-wall">
-    <picture class="cs-picture">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="/assets/images/Before-After.png">
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="/assets/images/Before-After.png">
-        <img loading="lazy" decoding="async" src="/assets/images/Before-After.png" alt="before-after cleaning">
-    </picture>
-</section>
+  </section>
 
 
-                                                            
-<!-- ============================================ -->
-<!--             Side By Side Reverse             -->
-<!-- ============================================ -->
+  <!-- ═══════════════════════════════════
+       HIGH REACH VACUUM GUTTER CLEANING
+  ═══════════════════════════════════ -->
+  <section class="cw-vacuum" id="high-reach-vacuum">
+    <div class="cw-container">
+      <div class="cw-section-label">Our Equipment</div>
+      <h2 class="cw-section-title">High Reach Vacuum Gutter Cleaning in Limerick</h2>
+      <p class="cw-section-desc">We use industrial-grade high reach vacuum systems — the safest, most effective way to clean gutters without ladders or scaffolding.</p>
 
-<section id="RTsbsr-581">
-    <div class="cs-container">
-        <picture class="cs-picture">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="/assets/images/Before-After2v.png">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" srcset="/assets/images/Before-After2v.png">
-            <img loading="lazy" decoding="async" src="/assets/images/Before-After2v.png" alt="fascia and soffit cleaning" width="494" height="700" style="object-fit: contain;">
-        </picture>
-        <div class="cs-content">
-            <span class="cs-topper">Gutter Cleaning Services</span>
-            <h2 class="cs-title">Fascia & Soffit Cleaning</h2>
-            <p class="cs-text">
-                Enhancing the appearance of your property is achievable through fascia and soffit cleaning. These components, which include the exterior surfaces of gutters and boards, are typically white or black and made from PVC, wood, or metal. They encompass elements like gutters, downpipes, vents, boards, and gable ends. We employ an eco-friendly approach to clean fascia and soffit, avoiding harsh chemicals to ensure a safe process.
-            </p>
+      <div class="cw-vacuum-grid">
 
-            <a href="/contact" class="cs-button-solid">BOOK FASCIA AND SOFFIT CLEANING</a>
+        <div class="cw-vacuum-content">
+          <h3>How High Reach Gutter Vacuuming Works</h3>
+          <p>Our high reach vacuum gutter cleaning system uses powerful industrial suction combined with lightweight carbon fibre poles that extend up to 12 metres — allowing us to reach and clean gutters on properties up to three storeys high, all from ground level.</p>
+          <p>The system can use a <strong>high reach camera</strong> mounted at the end of the pole, giving a photo of the inside of your gutters. This means we can see the results — no guesswork, no debris left behind. </p>
+          <p>The high reach vacuum is specifically designed for gutter cleaning. It generates significantly more suction power than a standard wet-and-dry vacuum, making it capable of lifting wet leaves, compacted moss, silt, roofing grit, and even small stones from your gutters. Once the gutters are vacuumed, we flush the downpipes with water to confirm everything is flowing freely.</p>
+
+          <h3>Why High Reach Vacuum Is Better Than Traditional Methods</h3>
+          <p>Traditional gutter cleaning often involves ladders, which come with real safety risks — especially on two-storey homes or properties with uneven ground. Ladders can also damage guttering, fascia, and roof tiles. Our high reach vacuum system eliminates these risks entirely.</p>
+          <p>Because we work from the ground, there's <strong>no risk of ladder damage to your property</strong>, no scaffolding costs, and the job is completed faster. The vacuum method is also far more thorough than scooping by hand — it removes fine silt and compacted debris that hand cleaning typically misses.</p>
+
+          <ul class="cw-vacuum-features">
+            <li>
+              <div class="cw-vf-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+              <div class="cw-vf-text">
+                <strong>Safer Than Ladders</strong>
+                <span>All work carried out from ground level. No climbing, no risk to your property or our team.</span>
+              </div>
+            </li>
+            <li>
+              <div class="cw-vf-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+              <div class="cw-vf-text">
+                <strong>Faster Completion</strong>
+                <span>Most homes completed in 45–90 minutes. No setup time for scaffolding or heavy equipment.</span>
+              </div>
+            </li>
+            <li>
+              <div class="cw-vf-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+              <div class="cw-vf-text">
+                <strong>Camera Inspection</strong>
+                <span>See inside your gutters. We show you the before and after so you know it's done right.</span>
+              </div>
+            </li>
+            <li>
+              <div class="cw-vf-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+              <div class="cw-vf-text">
+                <strong>More Thorough Clean</strong>
+                <span>Removes fine silt, compacted moss, roofing grit, and debris that hand-cleaning leaves behind.</span>
+              </div>
+            </li>
+            <li>
+              <div class="cw-vf-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+              <div class="cw-vf-text">
+                <strong>No Property Damage</strong>
+                <span>No ladders leaning on gutters or fascia. No scratches, dents, or cracked tiles.</span>
+              </div>
+            </li>
+            <li>
+              <div class="cw-vf-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+              <div class="cw-vf-text">
+                <strong>No Scaffolding Costs</strong>
+                <span>Reaches up to 12 metres. No scaffolding hire, no access charges — just one clear price.</span>
+              </div>
+            </li>
+          </ul>
+
+          <a href="/contact" class="cw-btn-primary" style="color: white;">Book Your Gutter Vacuum Clean <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
         </div>
-    </div>
-</section>
-                                                  
-<section id="steps-889">
-    <div class="cs-container">
-        <div class="cs-content">
-            <span class="cs-topper">Our Process</span>
-            <h2 class="cs-title">How It Works</h2>
-            <p class="cs-text">
-            </p>
+
+        <div class="cw-vacuum-sidebar">
+          <div class="cw-vs-card">
+            <h4>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              Equipment Specifications
+            </h4>
+            <p>Our SkyVac system generates over 10x the suction power of a standard vacuum. The carbon fibre poles reach heights of up to 12 metres (approx. 40 feet), and the integrated camera system provides real-time HD video of your gutter interior.</p>
+          </div>
+
+          <div class="cw-vs-card">
+            <h4>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              What We Remove
+            </h4>
+            <p>Leaves, moss, twigs, roofing felt, tile grit, bird nests, silt, compacted dirt, weeds, and standing water. We also check for and report any gutter damage, sagging joints, or blocked downpipes.</p>
+          </div>
+
+          <div class="cw-vs-card">
+            <h4>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Ideal For
+            </h4>
+            <p>Single-storey bungalows, two-storey houses, three storey houses, dormer properties, townhouses, terraced houses, commercial buildings, and any property where ladder access is difficult, dangerous, or restricted.</p>
+          </div>
+
+          <div class="cw-vs-card cw-vs-highlight">
+            <h4>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              Most Popular Package
+            </h4>
+            <p>Combine gutter vacuum cleaning with fascia &amp; soffit cleaning in one visit. Most customers save by bundling both services — and your entire roofline looks brand new when we're finished.</p>
+          </div>
         </div>
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <picture class="cs-picture">
-                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ficon-orange.svg" alt="icon" width="32" height="32" loading="lazy" decoding="async" aria-hidden="true">
-                </picture>
-                <h3 class="cs-h3">Get An Instant Online Quote</h3>
-            </li>
-            <!--Arrow-->
-            <li class="cs-item cs-arrow" aria-hidden="true">
-                <img class="cs-arrow-img" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Farrow-curve-right.svg" alt="icon" width="80" height="76" loading="lazy" decoding="async" aria-hidden="true">
-            </li>
-            <li class="cs-item">
-                <picture class="cs-picture">
-                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ficon-orange.svg" alt="icon" width="32" height="32" loading="lazy" decoding="async" aria-hidden="true">
-                </picture>
-                <h3 class="cs-h3">Make A Booking</h3>
-            </li>
-            <!--Arrow-->
-            <li class="cs-item cs-arrow" aria-hidden="true">
-                <img class="cs-arrow-img" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Farrow-curve-right.svg" alt="icon" width="80" height="76" loading="lazy" decoding="async" aria-hidden="true">
-            </li>
-            <li class="cs-item">
-                <picture class="cs-picture">
-                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ficon-orange.svg" alt="icon" width="32" height="32" loading="lazy" decoding="async" aria-hidden="true">
-                </picture>
-                <h3 class="cs-h3">We Clean Your Gutters</h3>
-                <p class="cs-item-p">
-                </p>
-            </li>
-        </ul>
-        <a href="/contact" class="cs-button-solid">GET AN INSTANT QUOTE</a>
+
+      </div>
     </div>
-</section>
- <!-- ============================================ -->
-<!--             Side By Side Reverse             -->
-<!-- ============================================ -->
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       STATS STRIP
+  ═══════════════════════════════════ -->
+  <section class="cw-stats" aria-label="Cleanway statistics">
+    <div class="cw-container">
+      <div class="cw-stats-grid">
+        <div class="cw-stat">
+          <div class="cw-stat-number">50<span>+</span></div>
+          <div class="cw-stat-label">5-Star Google Reviews</div>
+        </div>
+        <div class="cw-stat">
+          <div class="cw-stat-number">1000<span>+</span></div>
+          <div class="cw-stat-label">Gutters Cleaned in Limerick</div>
+        </div>
+        <div class="cw-stat">
+          <div class="cw-stat-number">12<span>m</span></div>
+          <div class="cw-stat-label">Max Vacuum Reach Height</div>
+        </div>
+        <div class="cw-stat">
+          <div class="cw-stat-number">10<span>min</span></div>
+          <div class="cw-stat-label">Average Quote Response</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       SIGNS YOUR GUTTERS NEED CLEANING
+  ═══════════════════════════════════ -->
+  <section class="cw-problems" id="signs">
+    <div class="cw-container">
+      <div class="cw-section-label">Warning Signs</div>
+      <h2 class="cw-section-title">8 Signs Your Gutters Need Professional Cleaning</h2>
+      <p class="cw-section-desc">Ignoring blocked gutters leads to expensive damage. If you notice any of these warning signs, it's time to call Cleanway for a professional gutter clean in Limerick.</p>
+
+      <div class="cw-problems-grid">
+        <div class="cw-problem-card">
+          <div class="cw-problem-num">01</div>
+          <div>
+            <h4>Water Overflowing From Gutters</h4>
+            <p>If rainwater spills over the edge of your gutters during rainfall rather than flowing to the downpipe, your gutters are blocked. This overflow causes water to run down external walls, leading to damp penetration and paint damage.</p>
+          </div>
+        </div>
+        <div class="cw-problem-card">
+          <div class="cw-problem-num">02</div>
+          <div>
+            <h4>Sagging or Pulling Away</h4>
+            <p>Gutters filled with wet debris become extremely heavy. Over time, this weight causes brackets to loosen and gutters to pull away from the fascia. Left untreated, sections can collapse entirely — requiring expensive replacement.</p>
+          </div>
+        </div>
+        <div class="cw-problem-card">
+          <div class="cw-problem-num">03</div>
+          <div>
+            <h4>Plants or Weeds Growing</h4>
+            <p>If you can see grass, weeds, or small plants sprouting from your gutters, it means there's enough compacted soil and organic matter to support growth. This is a clear sign of a significant blockage that needs professional vacuum cleaning.</p>
+          </div>
+        </div>
+        <div class="cw-problem-card">
+          <div class="cw-problem-num">04</div>
+          <div>
+            <h4>Staining on External Walls</h4>
+            <p>Green or black streaks running down your walls beneath the gutterline indicate water has been overflowing for some time. This constant moisture leads to algae growth, rendering damage, and eventually damp issues inside the property.</p>
+          </div>
+        </div>
+        <div class="cw-problem-card">
+          <div class="cw-problem-num">05</div>
+          <div>
+            <h4>Damp Patches Inside Your Home</h4>
+            <p>Damp spots appearing on bedroom ceilings or upper-floor walls near the roofline often trace back to overflowing gutters. Water finds its way behind fascia boards and into the roofspace, causing mould and structural damage.</p>
+          </div>
+        </div>
+        <div class="cw-problem-card">
+          <div class="cw-problem-num">06</div>
+          <div>
+            <h4>Birds Nesting in Your Gutters</h4>
+            <p>Gutters filled with leaves and moss make attractive nesting spots for birds. Nesting material causes severe blockages, and bird droppings add to the problem. Our vacuum system removes all nesting material safely.</p>
+          </div>
+        </div>
+        <div class="cw-problem-card">
+          <div class="cw-problem-num">07</div>
+          <div>
+            <h4>Pooling Water Around Foundations</h4>
+            <p>When gutters overflow, water pools around the base of your home instead of being directed away through the drainage system. This can undermine foundations and cause cracking, subsidence, and flood risk to ground-floor rooms.</p>
+          </div>
+        </div>
+        <div class="cw-problem-card">
+          <div class="cw-problem-num">08</div>
+          <div>
+            <h4>You Haven't Cleaned Them in Over a Year</h4>
+            <p>Even if you don't see visible problems, Limerick's wet climate and mature tree canopy mean gutters accumulate debris quickly. Annual cleaning prevents small build-ups from becoming major blockages and costly repairs.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cw-problems-cta">
+        <p><strong>Spotted any of these signs?</strong> Don't wait for the damage to get worse. Request your free gutter cleaning quote today and we'll have your gutters cleared within days.</p>
+        <a href="#hero" class="cw-btn-primary" style="color: white;">Get a Free Quote <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       WHY CHOOSE CLEANWAY
+  ═══════════════════════════════════ -->
+  <section class="cw-why" id="why-cleanway">
+    <div class="cw-container">
+      <div class="cw-section-label">Why Cleanway</div>
+      <h2 class="cw-section-title">Why Limerick Homeowners Choose Cleanway</h2>
+      <p class="cw-section-desc">We're not a franchise or a one-man outfit. Cleanway is a professional, locally operated cleaning company built on reliability, quality, and fair pricing.</p>
+
+      <div class="cw-why-grid">
+        <div class="cw-why-card">
+          <div class="cw-why-card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <h3>Local Limerick Team</h3>
+          <p>Based in Limerick and serving the city and county. We know the area and we're always nearby.</p>
+        </div>
+        <div class="cw-why-card">
+          <div class="cw-why-card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+          <h3>Professional Equipment</h3>
+          <p>Industrial vacuums, reach-and-wash systems, and specialist tools for a thorough, safe clean every time.</p>
+        </div>
+        <div class="cw-why-card">
+          <div class="cw-why-card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>Fully Insured</h3>
+          <p>Complete public liability insurance so you have total peace of mind while we work on your property.</p>
+        </div>
+        <div class="cw-why-card">
+          <div class="cw-why-card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+          <h3>Affordable Pricing</h3>
+          <p>Honest, competitive quotes with no hidden charges. We price fairly so you get real value for your money.</p>
+        </div>
+        <div class="cw-why-card">
+          <div class="cw-why-card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+          <h3>Reliable Scheduling</h3>
+          <p>We show up when we say we will. Flexible booking to work around your schedule with no messing.</p>
+        </div>
+        <div class="cw-why-card">
+          <div class="cw-why-card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></div>
+          <h3>Satisfaction Guaranteed</h3>
+          <p>50+ five-star reviews don't lie. We're not happy unless you are — that's the Cleanway standard.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       PROCESS SECTION
+  ═══════════════════════════════════ -->
+  <section class="cw-process" id="process">
+    <div class="cw-container">
+      <div class="cw-section-label">How It Works</div>
+      <h2 class="cw-section-title">Simple, Hassle-Free Process</h2>
+      <p class="cw-section-desc">From first contact to finished job, we make gutter and fascia cleaning straightforward and stress-free.</p>
+
+      <div class="cw-process-steps">
+        <div class="cw-process-step">
+          <div class="cw-step-number">01</div>
+          <div class="cw-step-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <h3>Request a Quote</h3>
+          <p>Fill in the form or give us a call. Tell us what you need and we'll respond quickly with a no-obligation price.</p>
+        </div>
+        <div class="cw-process-step">
+          <div class="cw-step-number">02</div>
+          <div class="cw-step-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+          <h3>Schedule Your Service</h3>
+          <p>Pick a date and time that suits you. We offer flexible scheduling, including weekends when available.</p>
+        </div>
+        <div class="cw-process-step">
+          <div class="cw-step-number">03</div>
+          <div class="cw-step-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <h3>Professional Cleaning</h3>
+          <p>Our team arrives on time with all equipment. We clean thoroughly and leave your property spotless.</p>
+        </div>
+        <div class="cw-process-step">
+          <div class="cw-step-number">04</div>
+          <div class="cw-step-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+          <h3>Final Inspection</h3>
+          <p>We walk you through the completed work and provide after photos on request.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       SERVICE AREA
+  ═══════════════════════════════════ -->
+  <section class="cw-area" id="service-area">
+    <div class="cw-container">
+      <div class="cw-area-content">
+        <div class="cw-section-label">Service Area</div>
+        <h2 class="cw-section-title">Gutter Cleaning Across Limerick City &amp; County</h2>
+        <p>Cleanway provides professional gutter cleaning, fascia cleaning, and soffit cleaning throughout Limerick. Whether you're in the city centre or the wider county area, our team covers your location. We serve both residential homes and commercial properties across all of Limerick.</p>
+        <p>Our Limerick-based team means faster response times, lower costs, and a service you can rely on from people who live and work in your community.</p>
+        <div class="cw-area-tags">
+          <span class="cw-area-tag">Limerick City</span>
+          <a href="/gutter-cleaning-castletroy" class="cw-area-tag">Castletroy</a>
+          <span class="cw-area-tag">Raheen</span>
+          <span class="cw-area-tag">Dooradoyle</span>
+          <span class="cw-area-tag">Annacotty</span>
+          <span class="cw-area-tag">Corbally</span>
+          <span class="cw-area-tag">Mungret</span>
+          <span class="cw-area-tag">Newcastle West</span>
+          <span class="cw-area-tag">Adare</span>
+          <span class="cw-area-tag">Kilmallock</span>
+          <span class="cw-area-tag">Abbeyfeale</span>
+          <span class="cw-area-tag">Caherconlish</span>
+          <span class="cw-area-tag">Patrickswell</span>
+          <span class="cw-area-tag">Bruff</span>
+          <span class="cw-area-tag">Hospital</span>
+          <span class="cw-area-tag">Croom</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
 <section id="RTsbsr-581">
     <div class="cs-container">
@@ -248,235 +1810,296 @@ permalink: 'gutter-cleaning-limerick/'
         </div>
     </div>
 </section> 
-<!-- ============================================ -->
-<!--             Side By Side Reverse             -->
-<!-- ============================================ -->
+  <!-- ═══════════════════════════════════
+       DETAILED CONTENT SECTION
+  ═══════════════════════════════════ -->
+  <section class="cw-detail" id="about-gutter-cleaning">
+    <div class="cw-container">
+      <div class="cw-section-label">Learn More</div>
+      <h2 class="cw-section-title">Everything You Need to Know About Gutter Cleaning in Limerick</h2>
 
-<section id="sbsr-684">
-    <div class="cs-container">
-        <!-- Left Section -->
-        <div class="cs-image-group">
-            <picture class="cs-picture cs-picture1">
-                <source media="(max-width: 600px)" srcset="/assets/images/skyvac1.webp">
-                <source media="(min-width: 601px)" srcset="/assets/images/skyvac1.webp">
-                <img loading="lazy" decoding="async" src="/assets/images/skyvac1.webp" alt="gutter cleaning" width="306" height="360">
-            </picture>
-            <picture class="cs-picture cs-picture2">
-                <source media="(max-width: 600px)" srcset="https://cheerful-biscochitos-c71e98.netlify.app/assets/images/gutter-stock-4.webp">
-                <source media="(min-width: 601px)" srcset="https://cheerful-biscochitos-c71e98.netlify.app/assets/images/gutter-stock-4.webp">
-                <img loading="lazy" decoding="async" src="https://cheerful-biscochitos-c71e98.netlify.app/assets/images/gutter-stock-4.webp" alt="gutters" width="306" height="360">
-            </picture>
-            <picture class="cs-picture cs-picture3">
-                <source media="(max-width: 600px)" srcset="/assets/images/skyvac3.webp">
-                <source media="(min-width: 601px)" srcset="/assets/images/skyvac3.webp">
-                <img loading="lazy" decoding="async" src="/assets/images/skyvac3.webp" alt="gutter cleaning" width="306" height="360">
-            </picture>
-            <picture class="cs-picture cs-picture4">
-                <source media="(max-width: 600px)" srcset="/assets/images/gc-feb26.jpeg">
-                <source media="(min-width: 601px)" srcset="/assets/images/gc-feb26.jpeg">
-                <img loading="lazy" decoding="async" src="/assets/images/gc-feb26.jpeg" alt="gutters" width="306" height="360">
-            </picture>
-            <!--Zig Zag Graphic-->
-            <img class="cs-graphic" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fzigzag.svg" loading="lazy" decoding="async" alt="gutters" width="983" height="416">
+      <div class="cw-detail-grid">
+        <div class="cw-detail-prose">
+          <h3>Why Gutter Cleaning Matters in Limerick's Climate</h3>
+          <p>Limerick receives well above the national average rainfall, with over 1,000mm annually. Combined with frequent Atlantic storms and the mature trees found across the city's residential areas, gutters in Limerick face a relentless onslaught of leaves, moss, and wind-blown debris throughout the year.</p>
+          <p>When gutters become blocked, rainwater has nowhere to go. It overflows down the face of your walls, seeps behind fascia boards, and pools around your foundations. In Limerick's damp climate, this excess moisture quickly leads to penetrating damp, black mould growth in bedrooms and living areas, and in severe cases, structural damage to timber roof components.</p>
+          <p>The cost of repairing damp damage — replastering walls, replacing rotted fascia, treating mould — far exceeds the cost of an annual gutter clean. Most Limerick homeowners find that regular gutter maintenance is one of the most cost-effective ways to protect their property.</p>
+
+          <h3>What Happens During a Cleanway Gutter Clean</h3>
+          <p>When our team arrives at your property, we may begin with a visual inspection of your guttering system from ground level using our camera-equipped poles. This allows us to assess the level of blockage and identify any damage or issues before we start cleaning.</p>
+          <p>We then use our high reach vacuum system to methodically work around the entire property, clearing every section of guttering. The powerful suction removes all debris — from loose leaves and moss to compacted silt and roofing grit that's built up over months or years.</p>
+          <p> If we encounter a downpipe blockage, we clear it using our specialist equipment. Finally, we carry out a second camera pass to confirm every section of guttering is completely clear.</p>
+          <p>Before we leave, we can provide you with photos as proof of the work completed. If we've identified any damage — cracked joints, loose brackets, corroded sections — we'll let you knowS</p>
+
+          <h3>How Often Should You Clean Your Gutters in Limerick?</h3>
+          <p>As a minimum, we recommend an annual gutter clean — typically in late autumn (November) once most leaves have fallen. However, many Limerick homes benefit from twice-yearly cleaning: once in autumn and once in spring. This is especially true for properties surrounded by deciduous trees, homes near farmland, older properties with cast-iron guttering, or houses in exposed locations that collect wind-blown debris.</p>
+          <p>If you've recently had roofing work done, we also recommend a gutter clean to remove tile grit, mortar, and roofing felt that inevitably ends up in the gutters during construction.</p>
+
+          <h3>Gutter Cleaning for Residential and Commercial Properties</h3>
+          <p>Cleanway serves both residential homeowners and commercial property owners across Limerick. We regularly clean gutters on semi-detached houses, detached homes, bungalows, apartment blocks, offices, retail units, schools, churches, and multi-unit developments. Our high reach vacuum system makes us especially effective on commercial buildings where traditional ladder access may not be safe or practical.</p>
+          <p>For property management companies and landlords with multiple properties in Limerick, we offer scheduled maintenance plans that ensure all properties are cleaned on a regular cycle — reducing the risk of tenant complaints and costly water damage claims.</p>
+
+          <h3>Fascia and Soffit Cleaning: The Full Roofline Treatment</h3>
+          <p>While you're having your gutters cleaned, it makes sense to clean your fascia and soffits at the same time. Fascia boards — the flat boards running along the lower edge of your roof — and soffits — the underside panels beneath the roofline — are constantly exposed to the elements. In Limerick's damp climate, they quickly develop black streaks, green algae, and a general dull, weathered appearance.</p>
+          <p>Our fascia and soffit cleaning service uses a soft-wash system with specialist cleaning solutions that are safe for uPVC, painted wood, and aluminium finishes. We don't use pressure washers on fascia and soffits — high pressure can force water behind boards and damage seals. Instead, our low-pressure, high-reach approach delivers a deep clean that restores your roofline to its original colour without any risk of damage.</p>
+          <p>Most customers who book fascia and soffit cleaning in Limerick are genuinely surprised at the difference. Years of weathering can make white uPVC look grey or yellow — after our clean, it looks factory-fresh again, dramatically improving the kerb appeal of your home.</p>
         </div>
-        <div class="cs-content">
-            <span class="cs-topper">Why Clean Your Gutters?</span>
-            <h2 class="cs-title">The Importance Of Regular <span class="cs-color">Gutter Cleaning</span> </h2>
-            <p class="cs-text">
-                Regular gutter maintenance is crucial for preserving the health and appearance of your property. Cleaning your gutters at least once a year can prevent numerous issues that may arise from neglect.
-            </p>
-            <p class="cs-text">
-                <b>Prevents Water Damage:</b>
-                Gutters play a vital role in directing rainwater away from your home's foundation. When gutters are clogged with debris like leaves and moss, water can overflow and seep into the foundation, causing cracks and structural damage. This can lead to costly repairs and compromise the safety of your home.
-            </p>
-            <p class="cs-text">
-                <b>Maintains the Aesthetic Appeal of Your Home</b>
-                Gutters filled with debris can lead to unsightly stains on the exterior of your home and damage to the fascia and soffit. Regular cleaning ensures that gutters remain clear and functional, preserving the visual appeal of your property. Clean gutters also prevent water from overflowing and staining the exterior walls and foundation.
-            </p>
-            <p class="cs-text">
-                <b>Protects Against Pest Infestations:</b>
-                Clogged gutters can become a habitat for pests such as birds and rodents. The accumulated debris provides an ideal environment for these pests to thrive. Regular cleaning helps to eliminate these habitats, reducing the risk of infestations that can affect the health and comfort of your household.
-            </p>
-            <p class="cs-text">
-                Cleaning your gutters at least once a year is essential for preventing water damage, protecting against pest infestations, and maintaining the aesthetic appeal of your home. This simple maintenance task can save you from significant repair costs and ensure the longevity of your property's structure and appearance. Regular gutter maintenance is a small investment that yields substantial benefits in the long run.
-            </p>
-            <a class="cs-button-solid" href="/contact">BOOK GUTTER CLEANING IN LIMERICK</a>
-        </div>
-    </div>
-</section>
-<!-- ============================================ -->
-<!--                   Steps                      -->
-<!-- ============================================ -->
 
-<section class="testimonials">
-  <div class="container">
-    <!-- Floating Google Badge -->
-    <div class="google-badge">
-      <div class="badge-content">
-        <svg class="google-logo" viewBox="0 0 272 92" xmlns="http://www.w3.org/2000/svg">
-          <path fill="#EA4335" d="M115.75 47.18c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18C71.25 34.32 81.24 25 93.5 25s22.25 9.32 22.25 22.18zm-9.74 0c0-7.98-5.79-13.44-12.51-13.44S80.99 39.2 80.99 47.18c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44z"/>
-          <path fill="#FBBC05" d="M163.75 47.18c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18c0-12.85 9.99-22.18 22.25-22.18s22.25 9.32 22.25 22.18zm-9.74 0c0-7.98-5.79-13.44-12.51-13.44s-12.51 5.46-12.51 13.44c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44z"/>
-          <path fill="#4285F4" d="M209.75 26.34v39.82c0 16.38-9.66 23.07-21.08 23.07-10.75 0-17.22-7.19-19.66-13.07l8.48-3.53c1.51 3.61 5.21 7.87 11.17 7.87 7.31 0 11.84-4.51 11.84-13v-3.19h-.34c-2.18 2.69-6.38 5.04-11.68 5.04-11.09 0-21.25-9.66-21.25-22.09 0-12.52 10.16-22.26 21.25-22.26 5.29 0 9.49 2.35 11.68 4.96h.34v-3.61h9.25zm-8.56 20.92c0-7.81-5.21-13.52-11.84-13.52-6.72 0-12.35 5.71-12.35 13.52 0 7.73 5.63 13.36 12.35 13.36 6.63 0 11.84-5.63 11.84-13.36z"/>
-          <path fill="#34A853" d="M225 3v65h-9.5V3h9.5z"/>
-          <path fill="#EA4335" d="M262.02 54.48l7.56 5.04c-2.44 3.61-8.32 9.83-18.48 9.83-12.6 0-22.01-9.74-22.01-22.18 0-13.19 9.49-22.18 20.92-22.18 11.51 0 17.14 9.16 18.98 14.11l1.01 2.52-29.65 12.28c2.27 4.45 5.8 6.72 10.75 6.72 4.96 0 8.4-2.44 10.92-6.14zm-23.27-7.98l19.82-8.23c-1.09-2.77-4.37-4.7-8.23-4.7-4.95 0-11.84 4.37-11.59 12.93z"/>
-          <path fill="#4285F4" d="M35.29 41.41V32H67c.31 1.64.47 3.58.47 5.68 0 7.06-1.93 15.79-8.15 22.01-6.05 6.3-13.78 9.66-24.02 9.66C16.32 69.35.36 53.89.36 34.91.36 15.93 16.32.47 35.3.47c10.5 0 17.98 4.12 23.6 9.49l-6.64 6.64c-4.03-3.78-9.49-6.72-16.97-6.72-13.86 0-24.7 11.17-24.7 25.03 0 13.86 10.84 25.03 24.7 25.03 8.99 0 14.11-3.61 17.39-6.89 2.66-2.66 4.41-6.46 5.1-11.65l-22.49.01z"/>
-        </svg>
-        <div class="badge-stats">
-          <div class="star-row">
-            <span class="star">★</span>
-            <span class="star">★</span>
-            <span class="star">★</span>
-            <span class="star">★</span>
-            <span class="star">★</span>
-          </div>
-          <div class="rating-score">4.9</div>
-          <div class="review-count">47+ Reviews</div>
-        </div>
-      </div>
-      <div class="badge-glow"></div>
-    </div>
-
-    <div class="section-header">
-      <span class="section-tag">Check Out Our Google Reviews</span>
-      <h2 class="section-title">Hear from Happy Local Customers</h2>
-    </div>
-    
-    <div class="reviews-carousel">
-      <!-- Review 1 -->
-      <div class="review-card card-tilt-left">
-        <div class="quote-mark">"</div>
-        <p class="review-text">On time. Efficient. Professional. Would 100% recommend and call again. Thanks lads.</p>
-        <div class="review-footer">
-          <div class="reviewer-avatar avatar-green">
-            <span>GF</span>
-          </div>
-          <div class="reviewer-details">
-            <div class="reviewer-name">Glenn Flanagan</div>
-            <div class="stars-inline">★★★★★</div>
-          </div>
-        </div>
-        <div class="card-accent accent-green"></div>
-      </div>
-
-      <!-- Review 2 -->
-      <div class="review-card card-featured">
-        <div class="featured-badge">Top Review</div>
-        <div class="quote-mark">"</div>
-        <p class="review-text">They got there on time and did an excellent job. Gutters are sorted!</p>
-        <div class="review-footer">
-          <div class="reviewer-avatar avatar-image">
-            <img src="/assets/images/john.png" alt="John Terranova">
-          </div>
-          <div class="reviewer-details">
-            <div class="reviewer-name">John Terranova</div>
-            <div class="stars-inline">★★★★★</div>
-          </div>
-        </div>
-        <div class="card-accent accent-gold"></div>
-      </div>
-
-      <!-- Review 3 -->
-      <div class="review-card card-tilt-right">
-        <div class="quote-mark">"</div>
-        <p class="review-text">Excellent service. Lads a pleasure to deal with. Would highly recommend.</p>
-        <div class="review-footer">
-          <div class="reviewer-avatar avatar-blue">
-            <span>TK</span>
-          </div>
-          <div class="reviewer-details">
-            <div class="reviewer-name">Tom Kelleher</div>
-            <div class="stars-inline">★★★★★</div>
-          </div>
-        </div>
-        <div class="card-accent accent-blue"></div>
-      </div>
-    </div>
-
-    <div class="cta-section">
-      <p class="cta-text">Join 47+ happy homeowners</p>
-      <a href="/contact" class="cta-button">Get Your Free Quote</a>
-    </div>
-  </div>
-</section>                          
-<!-- ============================================ -->
-<!--                     FAQ                      -->
-<!-- ============================================ -->
-
-<section id="faq-853">
-    <div class="cs-container">
-        <picture class="cs-picture">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="https://cheerful-biscochitos-c71e98.netlify.app/assets/images/gutter-stock-4.webp">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" srcset="https://cheerful-biscochitos-c71e98.netlify.app/assets/images/gutter-stock-4.webp">
-            <img loading="lazy" decoding="async" src="https://cheerful-biscochitos-c71e98.netlify.app/assets/images/gutter-stock-4.webp" alt="gutters" width="630" height="775" aria-hidden="true">
-        </picture>
-        <div class="cs-content">
-            <span class="cs-topper">FAQ</span>
-            <h2 class="cs-title">Frequently Asked Questions</h2>
-            <ul class="cs-faq-group">
-                <!-- Active class added as default -->
-                <li class="cs-faq-item active">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            What if my gutters are broken?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        If your gutters are broken, it is recommended to address the repairs before proceeding with a regular gutter cleaning. Broken gutters can cause safety issues during the cleaning process, they maybe unstable and be prone to further damage. Cleaning broken gutters may not yield the desired results. If the gutters are damaged, such as having cracks, holes, or disconnected sections, water and debris may not flow properly even after cleaning.
-                    </p>
-                </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            How long does gutter cleaning take?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        The duration of gutter cleaning can vary based on several factors, including the size of your home, the number of gutters, the amount of debris present, and the accessibility of the gutters.
-                        <br>
-                        As a general estimate, a standard gutter cleaning for an average-sized home typically takes anywhere from 1 to 2 hours. This time frame allows for a thorough inspection, removal of debris, and a final check to ensure the gutters are clear and flowing properly.
-                    </p>
-                </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            How often do I need my gutters cleaned?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        The frequency of gutter cleaning depends on several factors, including the surrounding environment and the type of trees or foliage near your home. As a general guideline, it is recommended to clean your gutters at least once or twice a year
-                    </p>
-                </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            What do I need to prepare for a gutter cleaning?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                       
-                            Clear access to the gutters by removing any obstacle<br><br>
-                            Secure pets indoors or in a safe area<br><br>
-                            Communicate specific concerns or instructions to the gutter cleaners.<br><br>
-                            Move outdoor furniture and decorations away from the work area.<br><br>
-                            Check for an accessible outdoor water source, if needed.<br><br>
-                 
-                    </p>
-                </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            How much does gutter cleaning cost?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                       For pricing information, check out our article on <a href="/blog/gutter-cleaning-cost-in-ireland/">Gutter Cleaning Limerick prices</a>
-                    </p>
-                </li>
+        <div class="cw-detail-aside">
+          <div class="cw-aside-card">
+            <h4>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Our Gutter Cleaning Includes
+            </h4>
+            <ul class="cw-aside-list">
+              <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>High reach vacuum cleaning</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Camera gutter inspection</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Downpipe flushing</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Blockage clearing</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Debris removal from site</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Before &amp; after photos</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Damage report (if applicable)</li>
             </ul>
+          </div>
+
+          <div class="cw-aside-card">
+            <h4>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Best Time to Clean
+            </h4>
+            <ul class="cw-aside-list">
+              <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Late autumn (November)</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Early spring (March)</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>After storms or high winds</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>After roofing works</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Before selling your home</li>
+            </ul>
+          </div>
+
+          <div class="cw-aside-cta">
+            <h4>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Ready to Book?
+            </h4>
+            <p>Get your free gutter cleaning quote today. Most quotes returned within 1 hour.</p>
+            <a href="#hero" class="cw-btn-accent">Get a Free Quote</a>
+          </div>
         </div>
+      </div>
     </div>
-</section>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       FAQ SECTION
+  ═══════════════════════════════════ -->
+  <section class="cw-faq" id="faq">
+    <div class="cw-container">
+      <div class="cw-section-label">FAQs</div>
+      <h2 class="cw-section-title">Frequently Asked Questions</h2>
+
+      <div class="cw-faq-list" itemscope itemtype="https://schema.org/FAQPage">
+
+        <div class="cw-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="cw-faq-question" itemprop="name" aria-expanded="false">How often should gutters be cleaned in Limerick?</button>
+          <div class="cw-faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">We recommend cleaning your gutters at least once a year in Limerick, ideally in late autumn after leaves have fallen. If your property is near trees or in an exposed area, twice yearly — autumn and spring — is best to prevent blockages and water damage.</p>
+          </div>
+        </div>
+
+        <div class="cw-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="cw-faq-question" itemprop="name" aria-expanded="false">Do you clean fascia and soffits as well as gutters?</button>
+          <div class="cw-faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Yes. Cleanway offers dedicated fascia and soffit cleaning in Limerick as a standalone service or combined with gutter cleaning. Combining both services is the most popular option and offers the best value — your entire roofline gets a thorough clean in one visit.</p>
+          </div>
+        </div>
+
+        <div class="cw-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="cw-faq-question" itemprop="name" aria-expanded="false">How much does gutter cleaning cost in Limerick?</button>
+          <div class="cw-faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Gutter cleaning prices depend on the size and type of your property, the level of blockage, and accessibility. We provide free, no-obligation quotes so you know the exact cost upfront — no hidden fees. Get in touch using the form above for a fast quote.</p>
+          </div>
+        </div>
+
+        <div class="cw-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="cw-faq-question" itemprop="name" aria-expanded="false">Do you work on two-storey houses?</button>
+          <div class="cw-faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Absolutely. We have professional equipment including ladders, safety harnesses, and reach-and-wash systems to safely clean gutters, fascia, and soffits on both single and two-storey properties throughout Limerick.</p>
+          </div>
+        </div>
+
+        <div class="cw-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="cw-faq-question" itemprop="name" aria-expanded="false">What areas in Limerick do you cover?</button>
+          <div class="cw-faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">We cover all of Limerick city and county, including Castletroy, Raheen, Dooradoyle, Annacotty, Corbally, Mungret, Newcastle West, Adare, Kilmallock, and everywhere in between. If you're in Limerick, we can get to you.</p>
+          </div>
+        </div>
+
+        <div class="cw-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="cw-faq-question" itemprop="name" aria-expanded="false">Is Cleanway fully insured?</button>
+          <div class="cw-faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Yes. Cleanway carries full public liability insurance. All work is carried out by trained professionals with proper safety equipment, giving you complete peace of mind.</p>
+          </div>
+        </div>
+
+        <div class="cw-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="cw-faq-question" itemprop="name" aria-expanded="false">What is high reach vacuum gutter cleaning?</button>
+          <div class="cw-faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">High reach vacuum gutter cleaning uses an industrial-strength vacuum system with carbon fibre poles that extend up to 12 metres. This allows us to clean your gutters from ground level — no ladders, no scaffolding. The system includes an on-board camera so we can see inside the gutter in real time and confirm every section is completely clear. It's the safest, fastest, and most thorough method of gutter cleaning available.</p>
+          </div>
+        </div>
+
+        <div class="cw-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="cw-faq-question" itemprop="name" aria-expanded="false">Is vacuum gutter cleaning better than hand cleaning?</button>
+          <div class="cw-faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Yes, in most cases. Vacuum cleaning removes fine silt, compacted moss, and grit that hand scooping typically leaves behind. It's also safer (no ladders), faster, causes no damage to your gutters or fascia, and allows us to verify the clean with a camera. The only scenario where hand cleaning might be needed is for extremely compacted blockages, which we can address with supplementary tools.</p>
+          </div>
+        </div>
+
+        <div class="cw-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="cw-faq-question" itemprop="name" aria-expanded="false">How long does gutter cleaning take?</button>
+          <div class="cw-faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Most standard residential properties in Limerick take between 45 minutes and 90 minutes to fully clean using our high reach vacuum system. Larger properties or heavily blocked gutters may take slightly longer. If you're combining gutter cleaning with fascia and soffit cleaning, allow approximately 2–3 hours for the full roofline treatment.</p>
+          </div>
+        </div>
+
+        <div class="cw-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="cw-faq-question" itemprop="name" aria-expanded="false">Do I need to be home during the gutter clean?</button>
+          <div class="cw-faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Not necessarily. Since we work from ground level using our high reach vacuum system, we can access most properties without needing to enter your home. As long as we can access around the exterior of the property, we can carry out the work. We'll send you before-and-after photos when the job is done.</p>
+          </div>
+        </div>
+
+        <div class="cw-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="cw-faq-question" itemprop="name" aria-expanded="false">Can you clean gutters in the rain?</button>
+          <div class="cw-faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">We can work in light rain — in fact, a little rain can actually help us see where water isn't flowing properly. However, we'll reschedule in heavy rain, strong winds, or dangerous weather conditions for safety reasons. We always let customers know in advance if we need to reschedule.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       FINAL CTA
+  ═══════════════════════════════════ -->
+  <section class="cw-final-cta" id="contact">
+    <div class="cw-container">
+      <div class="cw-final-cta-inner">
+        <h2>Get Your Gutters Professionally Cleaned Today</h2>
+        <p>Don't wait for leaks and damp to cause expensive damage. Cleanway makes it easy to keep your gutters, fascia, and soffits in top condition. Request your free quote now — most quotes returned within 1 hour.</p>
+        <a href="/contact" class="cw-btn-accent">
+          Get a Free Quote
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <p class="cw-final-phone">Or call us directly: <a href="tel:+3536369616">063 69616</a></p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+
+<!-- FAQ Toggle Script -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var items = document.querySelectorAll('.cw-faq-item');
+    items.forEach(function (item) {
+      var btn = item.querySelector('.cw-faq-question');
+      btn.addEventListener('click', function () {
+        var isOpen = item.classList.contains('active');
+        items.forEach(function (i) {
+          i.classList.remove('active');
+          i.querySelector('.cw-faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('active');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  });
+
+  document.getElementById('hero-quote-form').addEventListener('submit', async function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    const form = event.target;
+    const formData = new FormData(form);
+    const statusDiv = document.getElementById('form-status');
+
+    try {
+        // Send the form data to Zapier using fetch
+        const zapierResponse = await fetch('https://hooks.zapier.com/hooks/catch/17860884/uxmsukt/', {
+            method: 'POST',
+            body: formData
+        });
+
+        // If the Zapier request was successful
+        if (zapierResponse.ok) {
+            // Create a hidden iframe to submit the form to Netlify
+            const iframe = document.createElement('iframe');
+            iframe.name = 'netlify-target';
+            iframe.style.display = 'none';
+            document.body.appendChild(iframe);
+
+            // Create a new form to submit the data to Netlify
+            const netlifyForm = document.createElement('form');
+            netlifyForm.action = form.action;
+            netlifyForm.method = form.method;
+            netlifyForm.target = iframe.name;
+            document.body.appendChild(netlifyForm);
+
+            // Append all form fields to the new form
+            formData.forEach((value, key) => {
+                const input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = key;
+                input.value = value;
+                netlifyForm.appendChild(input);
+            });
+
+            // Submit the form to Netlify
+            netlifyForm.submit();
+
+            // Redirect to the thank-you page after the Netlify form is submitted
+            iframe.onload = function() {
+                window.location.href = '/thank-you';
+            };
+        } else {
+            statusDiv.innerHTML = '<p>There was a problem with your submission to Zapier. Please try again later.</p>';
+        }
+    } catch (error) {
+        statusDiv.innerHTML = '<p>There was a problem with your submission to Zapier. Please try again later.</p>';
+    }
+});
+
+</script>
+
+<!-- Local Business + FAQ Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Cleanway",
+  "description": "Professional gutter cleaning, fascia and soffit cleaning services in Limerick city and county.",
+  "url": "https://www.cleanway.ie/gutter-cleaning-limerick/",
+  "telephone": "+3536369616",
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Limerick"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "50",
+    "bestRating": "5"
+  },
+  "serviceType": ["Gutter Cleaning", "Fascia Cleaning", "Soffit Cleaning"],
+  "priceRange": "$$"
+}
+</script>
+
                                 
                                 
